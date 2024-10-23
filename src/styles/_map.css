@@ -1,3 +1,19 @@
 .map {
     height: 678px;
 }
+
+
+@media (1850px <= width) {
+
+    .map {
+        height: 724px;
+    }
+}
+
+
+@media (width < 740px) {
+
+    .map {
+        height: 284px;
+    }
+}

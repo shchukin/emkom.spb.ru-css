@@ -40,19 +40,18 @@
                 margin-top: 202px;
             }
                 .contacts__preview {
+                    position: relative;
                     width: 420px;
                     height: 364px;
                     clip-path: path("M316 0H104L0 182L104 364H316L420 182L316 0Z");
                 }
 
                 .contacts__item--spb .contacts__preview {
-                    position: relative;
                     left: 53px;
                     /*top: 15px;*/
                 }
 
                 .contacts__item--kirovsk .contacts__preview {
-                    position: relative;
                     left: -106px;
                     top: -12px;
                 }
@@ -100,8 +99,8 @@
                         }
 
                         .contacts__value {
-                            font-size: 22px;
-                            line-height: 27px;
+                            font-size: var(--body-font-size);
+                            line-height: var(--body-line-height);
                             color: #0F33A9;
                         }
 
@@ -122,14 +121,16 @@
                 /*position: absolute;*/
                 /*left: 50%;*/
                 /*margin-left: -100px;*/
-                /*top: 106px;*/
+                top: 120px;
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
-                /*padding: 10px 2000px 14px 100px;*/
+                padding-top: 1px;
+                padding-left: 148px;
+                padding-bottom: 7px;
                 /*background-color: #0D25FF;*/
                 /*font-weight: 600;*/
                 font-size: 50px;
-                line-height: 50px;
+                line-height: 42px;
                 /*color: #FFFFFF;*/
             }
 
@@ -157,12 +158,10 @@
                     }
 
                     .contacts__item--spb .contacts__preview {
-                        /*position: relative;*/
                         /*left: 53px;*/
                     }
 
                     .contacts__item--kirovsk .contacts__preview {
-                        /*position: relative;*/
                         /*left: -106px;*/
                         /*top: -12px;*/
                     }
@@ -181,6 +180,10 @@
                         font-size: 43px;
                         line-height: 43px;
                         /*color: #0D25FF;*/
+                    }
+
+                    .contacts__item--spb .contacts__sub-heading {
+                        margin-top: 20px;
                     }
 
                     .contacts__list {
@@ -215,3 +218,123 @@
                                 /*color: #0F33A9;*/
                             }
 }
+
+
+
+@media (width < 740px) {
+
+    .contacts {
+        position: static;
+        padding-top: 2px;
+        /*padding-bottom: var(--bottom-padding);*/
+        /*overflow: hidden; !* обрезаем заголовок *!*/
+    }
+        .contacts__wrap {
+
+        }
+            .contacts__heading {
+                position: static;
+                /*left: 50%;*/
+                margin-left: -200px;
+                margin-right: -200px;
+                /*top: 106px;*/
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                padding: 4px 200px 7px;
+                /*background-color: #0D25FF;*/
+                /*font-weight: 600;*/
+                font-size: 30px;
+                line-height: 30px;
+                /*color: #FFFFFF;*/
+                text-align: center;
+            }
+
+            .contacts__body {
+                display: block;
+                flex-direction: column;
+                /*grid-template-columns: repeat(2, 450px);*/
+                /*justify-content: center;*/
+            }
+                .contacts__item {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .contacts__item--spb {
+
+                }
+
+                .contacts__item--kirovsk {
+                    margin-top: 20px;
+                }
+                    .contacts__preview {
+                        position: static;
+                        margin-top: 3px;
+                        width: 328px;
+                        height: 284px;
+                        clip-path: path("M246.781 0H81.219L0 142L81.219 284H246.781L328 142L246.781 0Z");
+                    }
+
+                    .contacts__item--spb .contacts__preview {
+                        /*left: 53px;*/
+                    }
+
+                    .contacts__item--kirovsk .contacts__preview {
+                        /*left: -106px;*/
+                        /*top: -12px;*/
+                    }
+                        .contacts__image {
+                            /*vertical-align: top;*/
+                            /*width: 100%;*/
+                            /*height: 100%;*/
+                            /*object-fit: cover;*/
+                        }
+
+                    .contacts__sub-heading {
+                        order: -1;
+                        margin: 0 -200px;
+                        padding: 4px 200px 7px;
+                        /*margin-bottom: 0;*/
+                        background-color: #00F0FF;
+                        /*font-weight: bold;*/
+                        font-size: 30px;
+                        line-height: 30px;
+                        /*color: #0D25FF;*/
+                        text-align: center;
+                    }
+
+                    .contacts__list {
+                        /*margin-top: 20px;*/
+                        max-width: 280px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                        .contacts__channel {
+                            /*position: relative;*/
+                            /*padding-left: 36px;*/
+                            /*margin-top: var(--body-line-height);*/
+                        }
+
+                        .contacts__channel:first-child {
+                            /*margin-top: 0;*/
+                        }
+                            .contacts__icon {
+                                /*position: absolute;*/
+                                /*left: 0;*/
+                                top: 1px;
+                                /*vertical-align: top;*/
+                                /*width: 20px;*/
+                                /*height: auto;*/
+                                /*fill: #0F33A9;*/
+                            }
+
+                            .contacts__icon--email {
+                                margin-top: 6px;
+                            }
+
+                            .contacts__value {
+
+                                /*color: #0F33A9;*/
+                            }
+}
+
