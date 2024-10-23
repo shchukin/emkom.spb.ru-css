@@ -51,3 +51,43 @@
             /*text-align: center;*/
         }
 }
+
+
+
+@media (width < 740px) {
+
+    .http-error {
+        /*padding-top: var(--top-padding);*/
+        /*padding-bottom: var(--bottom-padding);*/
+        /*height: 100%;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+    }
+        .http-error__code {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: inherit;*/
+            font-size: 120px;
+            line-height: 120px;
+            /*color: #D1D3D4;*/
+            /*text-align: center;*/
+        }
+
+        @media (width < 350px) {
+            .http-error__code {
+                font-size: 100px;
+                line-height: 100px;
+            }
+        }
+
+        .http-error__description {
+            /*margin-top: 8px;*/
+            font-size: 16px;
+            line-height: 24px;
+            /*color: #D1D3D4;*/
+            /*text-align: center;*/
+        }
+}
+
