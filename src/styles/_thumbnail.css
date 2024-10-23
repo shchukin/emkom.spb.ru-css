@@ -1,0 +1,17 @@
+.thumbnail {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: filter var(--transition-hover);
+}
+
+.thumbnail:hover {
+    filter: brightness(110%) contrast(110%);
+}
+    .thumbnail__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+        width: 100%;
+        height: auto;
+    }
+
