@@ -1,0 +1,48 @@
+.http-error {
+    align-items: center;
+    justify-content: center;
+}
+    .http-error__code {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: inherit;
+        font-size: 130px;
+        line-height: 130px;
+        color: #D1D3D4;
+        text-align: center;
+    }
+
+    .http-error__description {
+        margin-top: 8px;
+        font-size: 18px;
+        line-height: 26px;
+        color: #D1D3D4;
+        text-align: center;
+    }
+
+
+
+@media (1850px <= width) {
+
+    .http-error {
+        /*align-items: center;*/
+        /*justify-content: center;*/
+    }
+        .http-error__code {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: inherit;*/
+            font-size: 162px;
+            line-height: 162px;
+            /*color: #D1D3D4;*/
+            /*text-align: center;*/
+        }
+
+        .http-error__description {
+            margin-top: 13px;
+            font-size: 22px;
+            line-height: 30px;
+            /*color: #D1D3D4;*/
+            /*text-align: center;*/
+        }
+}
