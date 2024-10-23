@@ -1,6 +1,5 @@
 .container {
-    box-sizing: content-box;
-    width: 1200px;
+    width: calc(1200px + 2 * var(--container-padding));
     border-left: var(--container-padding) solid transparent;
     border-right: var(--container-padding) solid transparent;
     margin-left: auto;
@@ -9,7 +8,7 @@
 
 @media (1850px <= width) {
     .container {
-        width: 1678px;
+        width: calc(1678px + 2 * var(--container-padding));
     }
 }
 

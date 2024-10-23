@@ -1,0 +1,16 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+    .page__header {
+        flex-shrink: 0;
+    }
+
+    .page__body {
+        flex-grow: 1;
+    }
+
+    .page__footer {
+        flex-shrink: 0;
+    }
