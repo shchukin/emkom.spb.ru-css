@@ -17,6 +17,7 @@
     /*--error: #FF0033;*/
     --top-padding: 42px;
     --bottom-padding: calc(var(--top-padding) * 2);
+    --header-height: 140px;
 }
 
 @media (1850px <= width) {
@@ -28,6 +29,7 @@
 
 @media (width < 740px) {
     :root {
+        --header-height: 90px;
         --container-padding: 16px;
         --top-padding: 32px;
     }
