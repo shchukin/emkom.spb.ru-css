@@ -1,0 +1,106 @@
+.contacts {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: var(--bottom-padding);
+    overflow: hidden; /* обрезаем заголовок */
+}
+    .contacts__wrap {
+
+    }
+        .contacts__heading {
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            top: 106px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding: 10px 2000px 14px 100px;
+            background-color: #0D25FF;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 40px;
+            color: #FFFFFF;
+        }
+
+        .contacts__body {
+            display: grid;
+            grid-template-columns: repeat(2, 450px);
+            justify-content: center;
+            gap: 38px;
+        }
+            .contacts__item {
+
+            }
+
+            .contacts__item--spb {
+
+            }
+
+            .contacts__item--kirovsk {
+                margin-top: 202px;
+            }
+                .contacts__preview {
+                    width: 420px;
+                    height: 364px;
+                    clip-path: path("M316 0H104L0 182L104 364H316L420 182L316 0Z");
+                }
+
+                .contacts__item--spb .contacts__preview {
+                    position: relative;
+                    left: 53px;
+                    /*top: 15px;*/
+                }
+
+                .contacts__item--kirovsk .contacts__preview {
+                    position: relative;
+                    left: -106px;
+                    top: -12px;
+                }
+                    .contacts__image {
+                        vertical-align: top;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                .contacts__sub-heading {
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                    margin-left: -3px;
+                    font-weight: bold;
+                    font-size: 40px;
+                    line-height: 40px;
+                    color: #0D25FF;
+                }
+
+                .contacts__list {
+                    margin-top: 20px;
+                }
+                    .contacts__channel {
+                        position: relative;
+                        padding-left: 50px;
+                        margin-top: var(--body-line-height);
+                    }
+
+                    .contacts__channel:first-child {
+                        margin-top: 0;
+                    }
+                        .contacts__icon {
+                            position: absolute;
+                            left: 0;
+                            top: 2px;
+                            vertical-align: top;
+                            width: 20px;
+                            height: auto;
+                            fill: #0F33A9;
+                        }
+
+                        .contacts__icon--email {
+                            margin-top: 6px;
+                        }
+
+                        .contacts__value {
+                            font-size: 22px;
+                            line-height: 27px;
+                            color: #0F33A9;
+                        }

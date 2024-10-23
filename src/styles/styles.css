@@ -12,7 +12,7 @@
 /*@import url("_nobr.css");*/
 /*@import url("_hide-scrollbar.css");*/
 
-/*@import url("_link.css");*/
+@import url("_link.css");
 /*@import url("_button.css");*/
 /*@import url("_input.css");*/
 /*@import url("_choice.css");*/
@@ -29,5 +29,7 @@
 @import url("_header.css");
 @import url("_footer.css");
 @import url("_page.css");
+@import url("_contacts.css");
+@import url("_map.css");
 
 
