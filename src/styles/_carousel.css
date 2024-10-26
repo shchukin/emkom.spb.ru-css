@@ -49,8 +49,8 @@
             }
                 .carousel--css-skin-portfolio .carousel__widget .swiper-wrapper {
                     display: grid;
-                    grid-template-columns: repeat(6, 1fr); /* Default to 3 items per row */
-                    gap: 38px;
+                    grid-template-columns: repeat(6, 162px); /* Default to 3 items per row */
+                    gap: 42px;
                     justify-content: center;
                 }
                     .carousel--css-skin-portfolio .swiper-slide {
