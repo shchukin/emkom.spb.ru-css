@@ -1,4 +1,40 @@
+.carousel {
 
+}
+
+/* Довольно запарно выключать слайдер на десктопах скриптом.
+   Проще перебить пару стилей:
+ */
+.carousel--css-disable-on-desktop {
+
+}
+
+@media (740px<= width) {
+
+    .carousel--css-disable-on-desktop {
+
+    }
+        .carousel--css-disable-on-desktop .carousel__widget .swiper {
+            overflow: visible;
+        }
+            .carousel--css-disable-on-desktop .carousel__widget .swiper-wrapper {
+                height: auto !important;
+                transform: none !important;
+            }
+                .carousel--css-disable-on-desktop .swiper-slide {
+                    width: auto !important;
+                    margin: 0 !important;
+                }
+
+        .carousel--css-disable-on-desktop .carousel__pagination {
+            display: none;
+        }
+}
+
+
+
+
+/* Проекты */
 
 @media (740px <= width) {
 
@@ -9,26 +45,37 @@
 
         }
             .carousel--css-skin-portfolio .carousel__widget .swiper {
-                overflow: visible;
+
             }
                 .carousel--css-skin-portfolio .carousel__widget .swiper-wrapper {
-                    display: flex;
-                    flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr); /* Default to 3 items per row */
                     gap: 38px;
-                    /* вырубаем слайдер: */
-                    height: auto !important;
-                    transform: none !important;
+                    justify-content: center;
                 }
                     .carousel--css-skin-portfolio .swiper-slide {
-                        /* вырубаем слайдер: */
-                        width: auto !important;
-                        margin: 0 !important;
+                        display: flex;
                     }
 
-        .carousel--css-skin-portfolio .carousel__pagination {
-            display: none;
-        }
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+1),
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+2) {
+                        grid-column: span 3;
+                    }
 
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+3),
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4),
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5) {
+                        grid-column: span 2;
+                    }
+
+
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+1) {
+                        justify-content: flex-end;
+                    }
+
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+2) {
+                        justify-content: flex-start;
+                    }
 }
 
 
@@ -43,6 +90,16 @@
             .carousel--css-skin-portfolio .carousel__widget .swiper {
                 overflow: visible; /* будем обрезать парой уровней выше, у границ экрана, а не контейнера */
             }
+                .carousel--css-skin-portfolio .swiper-wrapper {
+
+                }
+                    .carousel--css-skin-portfolio .swiper-slide {
+
+                    }
+                    .carousel--css-skin-portfolio .swiper-slide {
+                        display: flex;
+                        justify-content: center;
+                    }
 
         .carousel--css-skin-portfolio .carousel__pagination {
             margin-top: 23px;
