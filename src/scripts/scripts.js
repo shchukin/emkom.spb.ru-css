@@ -109,39 +109,40 @@
 
     /* Карусели */
 
-    const $carousel = document.querySelector('.carousel--js-init-portfolio');
-    let carouselWidget;
+    const portfolioCarousel = document.querySelector('.carousel--js-init-portfolio');
+    let portfolioCarouselWidget;
 
     /* Все слайдеры в одной функции, чтобы их можно было переинициализировать при ресайзе */
     function initCarousels() {
         if (!isDesktop) {
-            carouselWidget = new Swiper($carousel.querySelector('.swiper'), {
+            portfolioCarouselWidget = new Swiper(portfolioCarousel.querySelector('.swiper'), {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
                 spaceBetween: responsiveSpacing,
                 autoHeight: true,
                 pagination: {
-                    el: $carousel.querySelector('.carousel__pagination'),
+                    el: portfolioCarousel.querySelector('.carousel__pagination'),
                     type: "bullets", /* переделать на fraction, если слишком много точек */
                     bulletClass: 'carousel__bullet',
                     bulletActiveClass: 'carousel__bullet--current',
                     clickable: true
                 }
             });
-            $carousel.classList.add('carousel--initialized')
+            portfolioCarousel.classList.add('carousel--initialized')
         } else {
-            carouselWidget.destroy();
-            $carousel.classList.remove('carousel--initialized')
+            if(portfolioCarouselWidget) { /* это условие нужно на случай первого открытия на десктопе */
+                portfolioCarouselWidget.destroy();
+                portfolioCarousel.classList.remove('carousel--initialized')
+            }
         }
     }
 
 
-    $(document).ready(initCarousels);
+    document.addEventListener("DOMContentLoaded", initCarousels);
 
-    $(window).on('resize', function () {
-        setTimeout(initCarousels, 1000)
+    window.addEventListener("resize", () => {
+        setTimeout(initCarousels, 1000);
     });
-
 
 
 
