@@ -109,39 +109,43 @@
 
     /* Карусели */
 
-    const portfolioCarousel = document.querySelector('.carousel--js-init-portfolio');
+    const $portfolioCarousel = document.querySelector('.carousel--js-init-portfolio');
     let portfolioCarouselWidget;
+    let portfolioCarouselFlag = false;
 
-    /* Все слайдеры в одной функции, чтобы их можно было переинициализировать при ресайзе */
-    function initCarousels() {
+    function initPortfolioCarousel() {
         if (!isDesktop) {
-            portfolioCarouselWidget = new Swiper(portfolioCarousel.querySelector('.swiper'), {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
-                spaceBetween: responsiveSpacing,
-                autoHeight: true,
-                pagination: {
-                    el: portfolioCarousel.querySelector('.carousel__pagination'),
-                    type: "bullets", /* переделать на fraction, если слишком много точек */
-                    bulletClass: 'carousel__bullet',
-                    bulletActiveClass: 'carousel__bullet--current',
-                    clickable: true
-                }
-            });
-            portfolioCarousel.classList.add('carousel--initialized')
+            if (!portfolioCarouselFlag) {
+                portfolioCarouselWidget = new Swiper($portfolioCarousel.querySelector('.swiper'), {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: responsiveSpacing,
+                    autoHeight: true,
+                    pagination: {
+                        el: $portfolioCarousel.querySelector('.carousel__pagination'),
+                        type: "bullets", /* переделать на fraction, если слишком много точек */
+                        bulletClass: 'carousel__bullet',
+                        bulletActiveClass: 'carousel__bullet--current',
+                        clickable: true
+                    }
+                });
+                portfolioCarouselFlag = true;
+                $portfolioCarousel.classList.add('carousel--initialized')
+            }
         } else {
             if(portfolioCarouselWidget) { /* это условие нужно на случай первого открытия на десктопе */
                 portfolioCarouselWidget.destroy();
-                portfolioCarousel.classList.remove('carousel--initialized')
+                portfolioCarouselFlag = false;
+                $portfolioCarousel.classList.remove('carousel--initialized')
             }
         }
     }
 
 
-    document.addEventListener("DOMContentLoaded", initCarousels);
+    document.addEventListener("DOMContentLoaded", initPortfolioCarousel);
 
     window.addEventListener("resize", () => {
-        setTimeout(initCarousels, 1000);
+        setTimeout(initPortfolioCarousel, 1000);
     });
 
 
