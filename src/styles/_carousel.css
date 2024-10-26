@@ -50,32 +50,52 @@
                 .carousel--css-skin-portfolio .carousel__widget .swiper-wrapper {
                     display: grid;
                     grid-template-columns: repeat(6, 162px); /* Default to 3 items per row */
-                    gap: 42px;
+                    gap: 0 42px;
                     justify-content: center;
+                    padding-top: 69px;
                 }
                     .carousel--css-skin-portfolio .swiper-slide {
                         display: flex;
+                        margin-top: -69px !important;
                     }
 
                     .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+1),
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+2) {
-                        grid-column: span 3;
-                    }
-
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+3),
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4),
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5) {
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+2),
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+3) {
                         grid-column: span 2;
                     }
 
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4),
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5) {
+                        grid-column: span 3;
+                    }
+                        .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4)::before,
+                        .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5)::before {
+                            content: "";
+                            position: absolute;
+                            top: 0;
+                            display: block;
+                            width: 366px;
+                            height: 422px;
+                            background-image: url("../vectors/project-frame.svg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                        }
 
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+1) {
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4) {
                         justify-content: flex-end;
                     }
+                        .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+4)::before {
+                            right: 408px;
+                        }
 
-                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+2) {
+                    .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5) {
                         justify-content: flex-start;
                     }
+                        .carousel--css-skin-portfolio .swiper-slide:nth-child(5n+5)::before {
+                            left: 408px;
+                        }
 }
 
 
