@@ -1,44 +1,77 @@
-.carousel--css-skin-portfolio .carousel {
 
-}
-    .carousel--css-skin-portfolio .carousel__widget {
+
+@media (740px <= width) {
+
+    .carousel--css-skin-portfolio .carousel {
 
     }
-        .carousel--css-skin-portfolio .carousel__widget .swiper {
-            overflow: visible; /* будем обрезать парой уровней выше, у границ экрана, а не контейнера */
+        .carousel--css-skin-portfolio .carousel__widget {
+
+        }
+            .carousel--css-skin-portfolio .carousel__widget .swiper {
+                overflow: visible;
+            }
+                .carousel--css-skin-portfolio .carousel__widget .swiper-wrapper {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 38px;
+                    /* вырубаем слайдер: */
+                    height: auto !important;
+                    transform: none !important;
+                }
+                    .carousel--css-skin-portfolio .swiper-slide {
+                        /* вырубаем слайдер: */
+                        width: auto !important;
+                        margin: 0 !important;
+                    }
+
+        .carousel--css-skin-portfolio .carousel__pagination {
+            display: none;
         }
 
-    .carousel--css-skin-portfolio .carousel__pagination {
-        margin-top: 23px;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        /* На случай типа fraction: */
-        color: #FFFFFF;
-        text-align: center;
-    }
+}
 
-    .carousel--css-skin-portfolio.carousel--initialized .carousel__pagination {
-        display: flex;
+
+@media (width < 740px) {
+
+    .carousel--css-skin-portfolio .carousel {
+
     }
-        .carousel--css-skin-portfolio .carousel__bullet {
-            flex-shrink: 0;
-            width: 28px;
-            height: 40px;
+        .carousel--css-skin-portfolio .carousel__widget {
+
+        }
+            .carousel--css-skin-portfolio .carousel__widget .swiper {
+                overflow: visible; /* будем обрезать парой уровней выше, у границ экрана, а не контейнера */
+            }
+
+        .carousel--css-skin-portfolio .carousel__pagination {
+            margin-top: 23px;
             display: flex;
             align-items: center;
             justify-content: center;
-            cursor: pointer;
+            /* На случай типа fraction: */
+            color: #FFFFFF;
+            text-align: center;
         }
-            .carousel--css-skin-portfolio .carousel__bullet::after {
-                content: "";
-                display: block;
-                width: 16px;
-                height: 16px;
-                border-radius: 50%;
-                background-color: #666666;
+            .carousel--css-skin-portfolio .carousel__bullet {
+                flex-shrink: 0;
+                width: 28px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
             }
+                .carousel--css-skin-portfolio .carousel__bullet::after {
+                    content: "";
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50%;
+                    background-color: #666666;
+                }
 
-            .carousel--css-skin-portfolio .carousel__bullet--current::after {
-                background-color: #FFFFFF;
-            }
+                .carousel--css-skin-portfolio .carousel__bullet--current::after {
+                    background-color: #FFFFFF;
+                }
+}

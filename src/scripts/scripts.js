@@ -109,44 +109,25 @@
 
     /* Карусели */
 
-    const $portfolioCarousel = document.querySelector('.carousel--js-init-portfolio');
-    let portfolioCarouselWidget;
-    let portfolioCarouselFlag = false;
-
-    function initPortfolioCarousel() {
-        if (!isDesktop) {
-            if (!portfolioCarouselFlag) {
-                portfolioCarouselWidget = new Swiper($portfolioCarousel.querySelector('.swiper'), {
-                    slidesPerView: 1,
-                    slidesPerGroup: 1,
-                    spaceBetween: responsiveSpacing,
-                    autoHeight: true,
-                    pagination: {
-                        el: $portfolioCarousel.querySelector('.carousel__pagination'),
-                        type: "bullets", /* переделать на fraction, если слишком много точек */
-                        bulletClass: 'carousel__bullet',
-                        bulletActiveClass: 'carousel__bullet--current',
-                        clickable: true
-                    }
-                });
-                portfolioCarouselFlag = true;
-                $portfolioCarousel.classList.add('carousel--initialized')
-            }
-        } else {
-            if(portfolioCarouselWidget) { /* это условие нужно на случай первого открытия на десктопе */
-                portfolioCarouselWidget.destroy();
-                portfolioCarouselFlag = false;
-                $portfolioCarousel.classList.remove('carousel--initialized')
-            }
+    document.querySelectorAll('.carousel').forEach(($carousel) => {
+        if( $carousel.classList.contains('carousel--js-init-portfolio') ) {
+            new Swiper(document.querySelector('.carousel--js-init-portfolio .swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: responsiveSpacing,
+                autoHeight: true,
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                }
+            });
         }
-    }
-
-
-    document.addEventListener("DOMContentLoaded", initPortfolioCarousel);
-
-    window.addEventListener("resize", () => {
-        setTimeout(initPortfolioCarousel, 1000);
     });
+
+
 
 
 
