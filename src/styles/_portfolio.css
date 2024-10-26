@@ -14,6 +14,10 @@
             padding-top: 50px;
             padding-bottom: 35px;
         }
+            .portfolio__list-wrap .work {
+                margin-left: auto;
+                margin-right: auto;
+            }
 
     .portfolio__map-heading {
 
@@ -38,10 +42,11 @@
 
         .portfolio__list {
             background-color: #0D25FF;
+            overflow: hidden; /* обрезаем карусель */
         }
             .portfolio__list-wrap {
                 /*padding-top: 50px;*/
-                /*padding-bottom: 35px;*/
+                padding-bottom: 23px;
             }
 
         .portfolio__map-heading {

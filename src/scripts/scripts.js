@@ -1,5 +1,21 @@
 (function ($) {
 
+    /* Глобальные константы */
+
+    let responsiveSpacing;
+
+    function initGlobalConstant() {
+        responsiveSpacing = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--container-padding'));
+    }
+
+    /* При открытии страницы */
+    initGlobalConstant();
+
+    /* При ресайзе страницы */
+    window.addEventListener('resize', initGlobalConstant);
+
+
+
     /* Инпуты */
 
     /* Select placeholder */
@@ -91,24 +107,19 @@
 
     /* Карусели */
 
-    const $swiper = document.querySelector('.swiper');
+    const $carousel = document.querySelector('.carousel--js-init-portfolio');
 
-    const swiper = new Swiper($swiper, {
-
-        loop: true,
-
+    const swiper = new Swiper($carousel.querySelector('.swiper'), {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        spaceBetween: responsiveSpacing,
+        autoHeight: true,
         pagination: {
-            el: $swiper.querySelector('.carousel__pagination'),
-            type: 'fraction'
-        },
-
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        scrollbar: {
-            el: '.swiper-scrollbar',
+            el: $carousel.querySelector('.carousel__pagination'),
+            type: "bullets",
+            bulletClass: 'carousel__bullet',
+            bulletActiveClass: 'carousel__bullet--current',
+            clickable: true
         },
     });
 
