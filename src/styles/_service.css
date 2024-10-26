@@ -30,9 +30,6 @@
 
         .service__gallery {
             margin-top: 48px;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 14px;
         }
 
         .service__bottom-content {
@@ -74,9 +71,6 @@
 
             .service__gallery {
                 /*margin-top: 48px;*/
-                /*display: grid;*/
-                /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
-                /*gap: 14px;*/
             }
 
             .service__bottom-content {
@@ -120,8 +114,6 @@
 
             .service__gallery {
                 margin-top: 34px;
-                margin-left: calc(-1 * var(--container-padding));
-                margin-right: calc(-1 * var(--container-padding));
                 /*gap: 14px;*/
             }
                 .service__gallery-item {
