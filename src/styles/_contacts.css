@@ -270,9 +270,19 @@
                     .contacts__preview {
                         position: static;
                         margin-top: 3px;
+                        margin-left: auto;
+                        margin-right: auto;
                         width: 328px;
                         height: 284px;
                         clip-path: path("M246.781 0H81.219L0 142L81.219 284H246.781L328 142L246.781 0Z");
+                    }
+
+                    @media (max-width: 350px) {
+                        .contacts__preview {
+                            width: 290px;
+                            height: 251px;
+                            clip-path: path("M218.19 0H71.8095L0 125.5L71.8095 251H218.19L290 125.5L218.19 0Z");
+                        }
                     }
 
                     .contacts__item--spb .contacts__preview {

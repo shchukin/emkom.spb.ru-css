@@ -34,15 +34,20 @@
 
 
 .wysiwyg h2 {
-
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
 }
 
 .wysiwyg h3 {
-
+    font-weight: 600;
+    text-align: center;
 }
 
 .wysiwyg h4 {
-
+    font-weight: 600;
+    text-align: center;
 }
 
 .wysiwyg h2:first-child,
@@ -58,6 +63,46 @@
 }
 
 
+.wysiwyg ul,
+.wysiwyg ol {
+
+}
+    .wysiwyg li {
+        margin-top: 0.5em;
+    }
+
+    .wysiwyg li:first-child {
+        margin-top: 0;
+    }
+
+.wysiwyg ul {
+    list-style: none;
+    padding-left: 0;
+}
+    .wysiwyg ul li {
+        position: relative;
+        padding-left: 20px;
+    }
+        .wysiwyg ul li::before {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 13px;
+            width: 5px;
+            height: 5px;
+            background-color: currentColor;
+            border-radius: 50%;
+        }
+
+        @media (width < 740px) {
+            .wysiwyg ul li::before {
+                left: 6px;
+                top: 11px;
+                width: 4px;
+                height: 4px;
+            }
+        }
+
 .wysiwyg img {
     width: 100%;
     height: auto;
@@ -66,6 +111,14 @@
 
 .wysiwyg a {
     /* See .link component */
+}
+
+
+
+
+.wysiwyg strong,
+.wysiwyg b {
+    font-weight: 600;
 }
 
 
