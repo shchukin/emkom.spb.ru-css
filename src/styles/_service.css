@@ -15,35 +15,30 @@
     .service__body {
         margin-top: 50px;
     }
-        .service__wrap {
-
+        .service__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
         }
-            .service__heading {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-weight: 600;
-                font-size: 50px;
-                line-height: 50px;
-                text-align: center;
-            }
 
-            .service__top-content {
-                margin-top: 44px;
-            }
+        .service__top-content {
+            margin-top: 44px;
+        }
 
-            .service__gallery {
-                margin-top: 48px;
-                display: grid;
-                grid-template-columns: repeat(3, minmax(0, 1fr));
-                gap: 14px;
-            }
-                .service__gallery-item {
+        .service__gallery {
+            margin-top: 48px;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 14px;
+        }
 
-                }
+        .service__bottom-content {
+            margin-top: 48px;
+        }
 
-            .service__bottom-content {
-                margin-top: 48px;
-            }
 
 @media (1850px <= width) {
 
@@ -61,65 +56,32 @@
                 /*object-fit: cover;*/
             }
 
-
-        .service__summary {
-            padding-top: 35px;
-            /*padding-bottom: 60px;*/
-            /*background-color: #DFF3FF;*/
-        }
-            .service__summary-wrap {
-
-            }
-                .service__summary-limitation {
-
-                }
-                    .service__date {
-                        /*display: block;*/
-                        /*font-weight: normal;*/
-                        /*font-size: 18px;*/
-                        /*line-height: 24px;*/
-                        /*color: #666666;*/
-                        /*text-decoration: none;*/
-                    }
-
-                    .service__heading {
-                        /*margin-top: 35px;*/
-                        /*margin-bottom: 0;*/
-                        /*font-weight: 600;*/
-                        font-size: 50px;
-                        line-height: 58px;
-                    }
-
-                    .service__data {
-                        /*margin-top: 40px;*/
-                    }
-                        .service__stat {
-                            /*margin-top: var(--body-line-height);*/
-                        }
-                            .service__param {
-                                /*text-transform: uppercase;*/
-                            }
-
-                            .service__value {
-                                /*margin-top: var(--body-line-height);*/
-                            }
-
         .service__body {
 
         }
-            .service__content {
-                padding-top: 36px;
-                padding-bottom: 64px;
+            .service__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: 600;*/
+                font-size: 50px;
+                line-height: 58px;
+                /*text-align: center;*/
+            }
+
+            .service__top-content {
+                /*margin-top: 44px;*/
             }
 
             .service__gallery {
+                /*margin-top: 48px;*/
                 /*display: grid;*/
                 /*grid-template-columns: repeat(3, minmax(0, 1fr));*/
                 /*gap: 14px;*/
             }
-                .service__gallery-item {
 
-                }
+            .service__bottom-content {
+                /*margin-top: 48px;*/
+            }
 }
 
 
@@ -140,63 +102,24 @@
                 /*object-fit: cover;*/
             }
 
-
-        .service__summary {
-            padding-top: 16px;
-            padding-bottom: 24px;
-            /*background-color: #DFF3FF;*/
-        }
-            .service__summary-wrap {
-
-            }
-                .service__summary-limitation {
-
-                }
-                    .service__date {
-                        /*display: block;*/
-                        /*font-weight: normal;*/
-                        font-size: 17px;
-                        line-height: 22px;
-                        /*color: #666666;*/
-                        /*text-decoration: none;*/
-                    }
-
-                    .service__heading {
-                        margin-top: 21px;
-                        /*margin-bottom: 0;*/
-                        /*font-weight: 600;*/
-                        font-size: 30px;
-                        line-height: 37px;
-                    }
-
-                    .service__data {
-                        margin-top: 19px;
-                    }
-                        .service__stat {
-                            margin-top: 8px;
-                        }
-                            .service__param {
-                                /*text-transform: uppercase;*/
-                                font-size: 22px;
-                                line-height: 30px;
-                            }
-
-                            .service__value {
-                                margin-top: 10px;
-                            }
-
         .service__body {
-            display: flex;
-            flex-direction: column;
+            margin-top: 50px;
         }
-            .service__content {
-                /*padding-top: 42px;*/
-                padding-bottom: 0;
+            .service__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: 600;*/
+                font-size: 30px;
+                line-height: 37px;
+                /*text-align: center;*/
+            }
+
+            .service__top-content {
+                margin-top: 20px;
             }
 
             .service__gallery {
-                order: -1;
-                display: block;
+                margin-top: 34px;
                 margin-left: calc(-1 * var(--container-padding));
                 margin-right: calc(-1 * var(--container-padding));
                 /*gap: 14px;*/
@@ -208,5 +131,9 @@
                 .service__gallery-item:nth-child(n+2) {
                     display: none;
                 }
+
+            .service__bottom-content {
+                /*margin-top: 48px;*/
+            }
 }
 

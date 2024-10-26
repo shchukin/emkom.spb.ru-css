@@ -40,6 +40,14 @@
     text-align: center;
 }
 
+@media (width < 740px) {
+
+    .wysiwyg h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
 .wysiwyg h3 {
     font-weight: 600;
     text-align: center;
