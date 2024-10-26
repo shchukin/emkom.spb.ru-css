@@ -33,6 +33,45 @@
 
 
 
+@media (1850px <= width) {
+
+    .portfolio {
+        /*padding-top: 3px;*/
+        padding-bottom: 180px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+        .portfolio__heading {
+            margin-top: 47px;
+            /*margin-bottom: 0;*/
+            /*font-weight: 600;*/
+            font-size: 50px;
+            line-height: 58px;
+            /*text-align: center;*/
+        }
+
+        .portfolio__list {
+            /*overflow: hidden; !* обрезаем пустые гексагоны *!*/
+        }
+            .portfolio__list-wrap {
+                margin-top: 46px;
+            }
+                .portfolio__list-wrap .work {
+
+                }
+
+        .portfolio__map-heading {
+            /*display: none;*/
+        }
+
+        .portfolio__map {
+            /*order: -1;*/
+        }
+}
+
+
+
+
 @media (width < 740px) {
 
     .portfolio {
