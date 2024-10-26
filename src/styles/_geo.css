@@ -5,6 +5,12 @@
     background-repeat: no-repeat;
     background-position: center top;
 }
+    .geo__wrap {
+
+    }
+        .geo__list {
+            display: none;
+        }
 
 
 
@@ -14,4 +20,63 @@
         height: 826px;
         background-size: 1920px 820px, 100% 100%;
     }
+        .geo__wrap {
+
+        }
+            .geo__list {
+
+            }
 }
+
+
+
+@media (width < 740px) {
+
+    .geo {
+        height: auto;
+        min-height: 621px;
+        background-image: url("../images/geo/geo-smartphone.svg"), linear-gradient(#0389FF, #0D25FF);
+        background-size: 740px 621px, 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+        .geo__list {
+            display: block;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 26px 0;
+            list-style: none;
+            columns: 2;
+            gap: 12px;
+        }
+            .geo__item {
+                position: relative;
+                padding-left: 24px;
+                margin-bottom: 11px;
+                font-weight: 500;
+                font-size: 17px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+
+            @media (width < 350px) {
+                .geo__item {
+                    font-size: 15px;
+                    line-height: 20px;
+                }
+            }
+
+                .geo__item::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                    width: 10px;
+                    height: 10px;
+                    background-color: #00F0FF;
+                    border-radius: 50%;
+                }
+}
+
+
