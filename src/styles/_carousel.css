@@ -10,12 +10,16 @@
 
     .carousel--css-skin-portfolio .carousel__pagination {
         margin-top: 23px;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         /* На случай типа fraction: */
         color: #FFFFFF;
         text-align: center;
+    }
+
+    .carousel--css-skin-portfolio.carousel--initialized .carousel__pagination {
+        display: flex;
     }
         .carousel--css-skin-portfolio .carousel__bullet {
             flex-shrink: 0;

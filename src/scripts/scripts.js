@@ -2,10 +2,12 @@
 
     /* Глобальные константы */
 
+    let isDesktop; /* т.е. не смартфон, а любой десктоп */
     let responsiveSpacing;
 
     function initGlobalConstant() {
-        responsiveSpacing = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--container-padding'));
+        isDesktop = window.matchMedia("(min-width: 740px)").matches;
+        responsiveSpacing = !isDesktop ? parseInt(getComputedStyle(document.documentElement).getPropertyValue('--container-padding')) : 40;
     }
 
     /* При открытии страницы */
@@ -108,20 +110,40 @@
     /* Карусели */
 
     const $carousel = document.querySelector('.carousel--js-init-portfolio');
+    let carouselWidget;
 
-    const swiper = new Swiper($carousel.querySelector('.swiper'), {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: responsiveSpacing,
-        autoHeight: true,
-        pagination: {
-            el: $carousel.querySelector('.carousel__pagination'),
-            type: "bullets",
-            bulletClass: 'carousel__bullet',
-            bulletActiveClass: 'carousel__bullet--current',
-            clickable: true
-        },
+    /* Все слайдеры в одной функции, чтобы их можно было переинициализировать при ресайзе */
+    function initCarousels() {
+        if (!isDesktop) {
+            carouselWidget = new Swiper($carousel.querySelector('.swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: responsiveSpacing,
+                autoHeight: true,
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                }
+            });
+            $carousel.classList.add('carousel--initialized')
+        } else {
+            carouselWidget.destroy();
+            $carousel.classList.remove('carousel--initialized')
+        }
+    }
+
+
+    $(document).ready(initCarousels);
+
+    $(window).on('resize', function () {
+        setTimeout(initCarousels, 1000)
     });
+
+
+
 
 
 })(jQuery);
