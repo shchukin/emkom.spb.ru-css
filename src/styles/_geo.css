@@ -1,0 +1,17 @@
+.geo {
+    height: 610px;
+    background-image: url("../images/geo/geo-desktop.svg"), linear-gradient(#0389FF, #0D25FF);
+    background-size: 1428px 610px, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+
+
+@media (1850px <= width) {
+
+    .geo {
+        height: 826px;
+        background-size: 1920px 820px, 100% 100%;
+    }
+}

@@ -1,0 +1,98 @@
+.highlights {
+    padding-top: 38px;
+    padding-bottom: 50px;
+    background-color: #0F33A9;
+}
+    .highlights__wrap {
+
+    }
+        .highlights__item {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 9px;
+        }
+
+        .highlights__item:first-child {
+            margin-top: 0;
+        }
+            .highlights__icon {
+                flex-shrink: 0;
+            }
+
+            .highlights__label {
+                font-size: 22px;
+                line-height: 30px;
+                color: #FFFFFF;
+            }
+
+
+
+@media (1850px <= width) {
+
+    .highlights {
+        padding-top: 10px;
+        padding-bottom: 24px;
+        /*background-color: #0F33A9;*/
+    }
+        .highlights__wrap {
+
+        }
+            .highlights__item {
+                /*margin-top: 5px;*/
+                /*display: flex;*/
+                /*align-items: center;*/
+                gap: 26px;
+            }
+
+            .highlights__item:first-child {
+                /*margin-top: 0;*/
+            }
+                .highlights__icon {
+                    /*flex-shrink: 0;*/
+                }
+
+                .highlights__label {
+                    font-size: 30px;
+                    line-height: 38px;
+                    /*color: #FFFFFF;*/
+                }
+}
+
+
+
+@media (width < 740px) {
+
+    .highlights {
+        padding-top: 32px;
+        padding-bottom: 41px;
+        /*background-color: #0F33A9;*/
+    }
+        .highlights__wrap {
+
+        }
+            .highlights__item {
+                /*margin-top: 5px;*/
+                display: block;
+                /*align-items: center;*/
+                /*gap: 9px;*/
+                text-align: center;
+            }
+
+            .highlights__item:first-child {
+                /*margin-top: 0;*/
+            }
+                .highlights__icon {
+                    width: 214px;
+                    height: auto;
+                }
+
+                .highlights__label {
+                    margin-top: -10px;
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 24px;
+                    /*color: #FFFFFF;*/
+                }
+}
+
