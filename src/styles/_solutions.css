@@ -3,21 +3,22 @@
 }
     .solutions__head {
         position: relative;
-        background-image: url("../images/service/service-desktop-background@1x.jpg");
+        background-image: url("../images/solutions/solutions-desktop-background@1x.jpg");
         background-size: 1488px 400px;
         background-repeat: no-repeat;
         background-position: center top;
     }
 
-    @media (1488px <= width) {
-        .solutions__head {
-            background-size: 100% auto;
-        }
-    }
+    /* Возможное растягивание картинки для диапазона 1488-1849, но пока не понятно лучше с ним или без: */
+    /*@media (1488px <= width < 1850px) {*/
+    /*    .solutions__head {*/
+    /*        background-size: 100% auto;*/
+    /*    }*/
+    /*}*/
 
     @media (min-resolution: 1.5dppx) {
         .solutions__head {
-            background-image: url("../images/service/service-desktop-background@2x.jpg");
+            background-image: url("../images/solutions/solutions-desktop-background@2x.jpg");
         }
     }
 
@@ -50,7 +51,7 @@
             top: 42px;
             width: 60px;
             height: 46px;
-            background-image: url("../vectors/service-angles.svg");
+            background-image: url("../vectors/solutions-angles.svg");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
@@ -82,11 +83,18 @@
 
             }
 
+    .solutions__list {
+
+    }
+        .solutions__item {
+
+        }
+
 
 
 /*padding-top: 412px;*/
 /*background-color: #BFE6FF;*/
-/*background-image: url("../images/service/service-smartphone@1x.jpg");*/
+/*background-image: url("../images/solutions/solutions-smartphone@1x.jpg");*/
 /*background-size: cover;*/
 /*background-repeat: no-repeat;*/
 /*background-position: center top;*/

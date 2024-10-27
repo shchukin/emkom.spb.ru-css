@@ -1,0 +1,45 @@
+.product {
+    position: relative;
+    display: block;
+    width: 396px;
+    height: 456px;
+    clip-path: path("M395.188 114L198 0L0.680599 114L0.672852 342L198 456L395.25 342L395.188 114Z");
+}
+    .product__preview {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+        .product__image {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product__preview::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(rgb(217 217 217 / 20%), rgb(15 51 169 / 91%));
+            transition: opacity var(--transition-hover);
+        }
+
+
+.product__overlay {
+
+    }
+        .product__heading {
+
+        }
+
+        .product__description {
+
+        }
+
+        .product__more {
+
+        }
