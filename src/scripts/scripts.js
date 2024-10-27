@@ -1,22 +1,5 @@
 (function ($) {
 
-    /* Глобальные константы */
-
-    let isDesktop; /* т.е. не смартфон, а любой десктоп */
-    let responsiveSpacing;
-
-    function initGlobalConstant() {
-        isDesktop = window.matchMedia("(min-width: 740px)").matches;
-        responsiveSpacing = !isDesktop ? parseInt(getComputedStyle(document.documentElement).getPropertyValue('--container-padding')) : 40;
-    }
-
-    /* При открытии страницы */
-    initGlobalConstant();
-
-    /* При ресайзе страницы */
-    window.addEventListener('resize', initGlobalConstant);
-
-
 
     /* Инпуты */
 
@@ -114,7 +97,6 @@
             new Swiper(document.querySelector('.carousel--js-init-portfolio .swiper'), {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
-                spaceBetween: responsiveSpacing,
                 autoHeight: true,
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),

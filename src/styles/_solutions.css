@@ -1,0 +1,92 @@
+.solutions {
+    padding-top: 3px;
+}
+    .solutions__head {
+        position: relative;
+        background-image: url("../images/service/service-desktop-background@1x.jpg");
+        background-size: 1488px 400px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    @media (1488px <= width) {
+        .solutions__head {
+            background-size: 100% auto;
+        }
+    }
+
+    @media (min-resolution: 1.5dppx) {
+        .solutions__head {
+            background-image: url("../images/service/service-desktop-background@2x.jpg");
+        }
+    }
+
+        .solutions__features {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+            .solutions__category {
+                padding: 38px 70px;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #00F0FF;
+                text-transform: uppercase;
+            }
+
+            .solutions__category--left {
+                text-align: right;
+            }
+
+            .solutions__category--right {
+
+            }
+
+        .solutions__head::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-left: -30px;
+            top: 42px;
+            width: 60px;
+            height: 46px;
+            background-image: url("../vectors/service-angles.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+    .solutions__intro {
+        margin-top: 229px;
+        display: flex;
+        flex-direction: column;
+    }
+        .solutions__heading {
+            margin-top: 31px;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 49px;
+            text-align: center;
+        }
+
+        .solutions__description {
+            order: -1;
+            max-width: 890px;
+            margin: 0 auto;
+            font-size: 22px;
+            line-height: 28px;
+            text-align: center;
+        }
+            .solutions__heading-line-break {
+
+            }
+
+
+
+/*padding-top: 412px;*/
+/*background-color: #BFE6FF;*/
+/*background-image: url("../images/service/service-smartphone@1x.jpg");*/
+/*background-size: cover;*/
+/*background-repeat: no-repeat;*/
+/*background-position: center top;*/

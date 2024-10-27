@@ -70,6 +70,15 @@
             height: 294px;
             clip-path: path("M255 0H85L0 147L85 294H255L340 147L255 0Z");
         }
+
+        @media (width < 350px) {
+            .work__preview {
+                width: 300px;
+                height: 260px;
+                clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z");
+            }
+        }
+
             .work__image {
                 /*vertical-align: top;*/
                 /*width: 100%;*/
