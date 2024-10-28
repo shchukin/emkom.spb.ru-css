@@ -58,13 +58,16 @@
         }
 
     .solutions__intro {
-        margin-top: 229px;
+        margin-top: 242px;
         display: flex;
         flex-direction: column;
     }
         .solutions__heading {
             margin-top: 31px;
             margin-bottom: 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
             font-weight: 600;
             font-size: 40px;
             line-height: 49px;
@@ -84,14 +87,15 @@
             }
 
     .solutions__list {
+        margin-top: -320px;
         display: grid;
-        grid-template-columns: repeat(6, 174px); /* Default to 3 items per row */
-        gap: 0 47px;
+        grid-template-columns: repeat(6, 164px); /* Default to 3 items per row */
+        gap: 0 41px;
         justify-content: center;
-        padding-top: 456px;
-        padding-bottom: 385px;
+        padding-top: 427px;
+        padding-bottom: 306px;
         background-image: url("../vectors/solutions-skeleton.svg");
-        background-size: 1920px 2751px;
+        background-size: 1780px 2550px;
         background-repeat: no-repeat;
         background-position: center top;
     }
@@ -130,12 +134,227 @@
         .solutions__item:nth-child(2),
         .solutions__item:nth-child(3) {
             position: relative;
-            top: 3px;
+            top: 2px;
         }
 
-/*padding-top: 412px;*/
-/*background-color: #BFE6FF;*/
-/*background-image: url("../images/solutions/solutions-smartphone@1x.jpg");*/
-/*background-size: cover;*/
-/*background-repeat: no-repeat;*/
-/*background-position: center top;*/
+    .solutions__sub-section {
+        margin-top: -251px;
+    }
+        .solutions__sub-head {
+            display: flex;
+            flex-direction: column;
+        }
+            .solutions__sub-heading {
+                margin-top: 34px;
+                margin-bottom: 0;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 49px;
+                text-align: center;
+            }
+
+            .solutions__sub-description {
+                order: -1;
+                max-width: 880px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 22px;
+                line-height: 28px;
+                text-align: center;
+            }
+
+        .solutions__sub-list {
+            margin-top: -86px;
+            padding-top: 187px;
+            padding-bottom: 106px;
+            display: grid;
+            grid-template-columns: repeat(2, 372px);
+            justify-content: center;
+            gap: 41px;
+            background-image: url("../vectors/solutions-additional-skeleton.svg"), linear-gradient(#FFFFFF, #FFFFFF 20%, #0099FF);
+            background-size: 1488px 921px, auto auto;
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+            .solutions__sub-item {
+
+            }
+
+
+
+@media (1850px <= width) {
+
+    .solutions {
+        /*padding-top: 3px;*/
+    }
+        .solutions__head {
+            /*position: relative;*/
+            /*background-image: url("../images/solutions/solutions-desktop-background@1x.jpg");*/
+            background-size: 1920px 516px;
+            /*background-repeat: no-repeat;*/
+            /*background-position: center top;*/
+        }
+
+        /*@media (min-resolution: 1.5dppx) {*/
+        /*    .solutions__head {*/
+        /*        background-image: url("../images/solutions/solutions-desktop-background@2x.jpg");*/
+        /*    }*/
+        /*}*/
+
+            .solutions__features {
+                /*display: grid;*/
+                /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+            }
+                .solutions__category {
+                    padding: 50px 70px;
+                    /*font-weight: 600;*/
+                    font-size: 30px;
+                    line-height: 37px;
+                    /*color: #00F0FF;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .solutions__category--left {
+                    /*text-align: right;*/
+                }
+
+                .solutions__category--right {
+
+                }
+
+            .solutions__head::after {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 50%;*/
+                margin-left: -36px;
+                top: 60px;
+                width: 72px;
+                height: 55px;
+                /*background-image: url("../vectors/solutions-angles.svg");*/
+                /*background-size: contain;*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: center center;*/
+            }
+
+        .solutions__intro {
+            margin-top: 258px;
+            /*display: flex;*/
+            /*flex-direction: column;*/
+        }
+            .solutions__heading {
+                margin-top: 37px;
+                /*margin-bottom: 0;*/
+                /*font-weight: 600;*/
+                max-width: 700px;
+                font-size: 50px;
+                line-height: 58px;
+                /*text-align: center;*/
+            }
+
+            .solutions__description {
+                /*order: -1;*/
+                max-width: 830px;
+                /*margin: 0 auto;*/
+                /*font-size: 22px;*/
+                /*line-height: 28px;*/
+                /*text-align: center;*/
+            }
+                .solutions__heading-line-break {
+
+                }
+
+        .solutions__list {
+            margin-top: -354px;
+            grid-template-columns: repeat(6, 174px); /* Default to 3 items per row */
+            gap: 0 47px;
+            padding-top: 456px;
+            padding-bottom: 385px;
+            background-size: 1920px 2751px;
+        }
+            .solutions__item {
+                /*display: flex;*/
+                /*margin-top: -74px !important;*/
+            }
+
+            .solutions__item:nth-child(5n+1),
+            .solutions__item:nth-child(5n+2),
+            .solutions__item:nth-child(5n+3) {
+                /*grid-column: span 2;*/
+            }
+
+            .solutions__item:nth-child(5n+4),
+            .solutions__item:nth-child(5n+5) {
+                /*grid-column: span 3;*/
+            }
+
+                .solutions__item:nth-child(5n+4) {
+                    /*justify-content: flex-end;*/
+                }
+                    .solutions__item:nth-child(5n+4)::before {
+                        /*right: 408px;*/
+                    }
+
+                .solutions__item:nth-child(5n+5) {
+                    /*justify-content: flex-start;*/
+                }
+                    .solutions__item:nth-child(5n+5)::before {
+                        /*left: 408px;*/
+                    }
+
+
+            .solutions__item:nth-child(1),
+            .solutions__item:nth-child(2),
+            .solutions__item:nth-child(3) {
+                top: 3px;
+            }
+
+        .solutions__sub-section {
+            margin-top: -328px;
+        }
+            .solutions__sub-head {
+                /*display: flex;*/
+                /*flex-direction: column;*/
+            }
+                .solutions__sub-heading {
+                    margin-top: 44px;
+                    /*margin-bottom: 0;*/
+                    max-width: 800px;
+                    font-size: 50px;
+                    line-height: 58px;
+                    /*text-align: center;*/
+                }
+
+                .solutions__sub-description {
+                    /*order: -1;*/
+                    max-width: 830px;
+                    /*margin-left: auto;*/
+                    /*margin-right: auto;*/
+                    /*font-size: 22px;*/
+                    /*line-height: 28px;*/
+                    /*text-align: center;*/
+                }
+
+            .solutions__sub-list {
+                margin-top: -80px;
+                padding-top: 206px;
+                padding-bottom: 110px;
+                /*display: grid;*/
+                grid-template-columns: repeat(2, 396px);
+                /*justify-content: center;*/
+                gap: 60px;
+                /*background-image: url("../vectors/solutions-additional-skeleton.svg"), linear-gradient(#FFFFFF, #FFFFFF 20%, #0099FF);*/
+                background-size: 1604px 993px, auto auto;
+                /*background-repeat: no-repeat;*/
+                /*background-position: center top;*/
+            }
+                .solutions__sub-item {
+
+                }
+}
+
+
+
+
