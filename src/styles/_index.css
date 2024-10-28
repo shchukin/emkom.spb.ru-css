@@ -40,6 +40,6 @@
         }
 
         .index__projects {
-            margin-top: 5px;
+            margin-top: 5px; /* если это надо убрать, то не удаляем, а заменяем на 0 */
         }
 }
