@@ -18,12 +18,14 @@
     --top-padding: 42px;
     --bottom-padding: calc(var(--top-padding) * 2);
     --header-height: 140px;
+    --tiles-gap: 20px;
 }
 
 @media (1850px <= width) {
     :root {
         --container-padding: 60px;
         --top-padding: 58px;
+        --tiles-gap: 24px;
     }
 }
 
