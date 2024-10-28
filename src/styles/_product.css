@@ -66,6 +66,8 @@
         animation: slide-up 500ms ease;
     }
         .product__heading {
+            margin-top: 0;
+            margin-bottom: 0;
             font-size: 30px;
             line-height: 34px;
         }
@@ -76,7 +78,7 @@
         }
 
         .product__description {
-            margin-top: 8px;
+            margin-top: 12px;
             font-size: 18px;
             line-height: 22px;
             display: none;
@@ -95,6 +97,7 @@
             padding: 4px 22px;
             font-weight: bold;
             font-size: 16px;
+            line-height: 28px;
             display: none;
         }
 
@@ -189,7 +192,7 @@
             }
 
             .product__description {
-                /*margin-top: 8px;*/
+                margin-top: 14px;
                 font-size: 20px;
                 line-height: 24px;
                 /*display: none;*/
@@ -292,19 +295,19 @@
             /*animation: slide-up 500ms ease;*/
         }
             .product__heading {
-                font-size: 25px;
+                font-size: 24px;
                 line-height: 30px;
             }
 
             .product:hover .product__heading {
-                /*font-size: 20px;*/
-                /*line-height: 24px;*/
+                font-size: 18px;
+                line-height: 22px;
             }
 
             .product__description {
-                /*margin-top: 8px;*/
-                /*font-size: 18px;*/
-                /*line-height: 22px;*/
+                margin-top: 8px;
+                font-size: 13px;
+                line-height: 16px;
                 /*display: none;*/
             }
 
@@ -315,12 +318,13 @@
             .product__more {
                 /*margin-left: auto;*/
                 /*margin-right: auto;*/
-                /*margin-top: 16px;*/
+                margin-top: 10px;
                 /*width: fit-content;*/
                 /*border: 1px solid currentColor;*/
                 /*padding: 4px 22px;*/
                 /*font-weight: bold;*/
-                /*font-size: 16px;*/
+                font-size: 13px;
+                line-height: 20px;
                 /*display: none;*/
             }
 
