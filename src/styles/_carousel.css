@@ -122,20 +122,6 @@
                         position: absolute;
                     }
 
-                        /*.carousel--css-skin-short-portfolio-on-desktop .swiper-slide:nth-child(5n+4)::before,*/
-                        /*.carousel--css-skin-short-portfolio-on-desktop .swiper-slide:nth-child(5n+5)::before {*/
-                        /*    content: "";*/
-                        /*    position: absolute;*/
-                        /*    top: 0;*/
-                        /*    display: block;*/
-                        /*    width: 366px;*/
-                        /*    height: 422px;*/
-                        /*    background-image: url("../vectors/project-frame.svg");*/
-                        /*    background-size: contain;*/
-                        /*    background-repeat: no-repeat;*/
-                        /*    background-position: center center;*/
-                        /*}*/
-
                     .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--01 {
                         left: 0;
                         bottom: 0;
@@ -182,6 +168,98 @@
                     .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--07 {
                         display: none;
                     }
+
+
+
+    @media (1850px <= width) {
+
+        .carousel--css-skin-short-portfolio-on-desktop .carousel {
+
+        }
+            .carousel--css-skin-short-portfolio-on-desktop .carousel__widget {
+                /*overflow: hidden;*/
+            }
+                .carousel--css-skin-short-portfolio-on-desktop .carousel__widget .swiper {
+                    margin-left: -658px; /* не совсем по-цвентру */
+                    margin-right: -500px;
+                }
+                    .carousel--css-skin-short-portfolio-on-desktop .carousel__widget .swiper-wrapper {
+                        width: 1671px !important;
+                        height: 901px !important;
+                        /*margin-left: auto;*/
+                        /*margin-right: auto;*/
+                    }
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide {
+                            /*position: absolute;*/
+                        }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--01 {
+                            left: 319px;
+                            top: 185px;
+                            bottom: auto;
+                        }
+                            .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--01::after {
+                                content: "";
+                                position: absolute;
+                                top: 156px;
+                                right: 318px;
+                                margin-top: 29px;
+                                display: block;
+                                width: 399px;
+                                height: 346px;
+                                background-image: url("../vectors/task-frame-monitor.svg");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position: center center;
+                            }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--02 {
+                            left: 638px;
+                            top: 0;
+                            bottom: auto;
+                        }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--03 {
+                            left: 638px;
+                            top: 370px;
+                        }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--04 {
+                            left: 956px;
+                            bottom: auto;
+                            top: 185px;
+                        }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--05 {
+                            left: 956px;
+                            bottom: 0;
+                            top: auto;
+                        }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--06 {
+                            left: 1274px;
+                            top: 0;
+                        }
+                            .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--06::after {
+                                    /*content: "";*/
+                                    /*position: absolute;*/
+                                    top: 100%;
+                                    margin-top: 24px;
+                                    /*display: block;*/
+                                    width: 399px;
+                                    height: 346px;
+                                    background-image: url("../vectors/task-frame-monitor.svg");
+                                    /*background-size: contain;*/
+                                    /*background-repeat: no-repeat;*/
+                                    /*background-position: center center;*/
+                            }
+
+                        .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--07 {
+                            display: block;
+                            left: 319px;
+                            bottom: 0;
+                        }
+    }
 }
 
 

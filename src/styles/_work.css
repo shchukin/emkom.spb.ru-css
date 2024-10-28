@@ -141,3 +141,42 @@
     .work--smaller .work__label {
         padding: 21px 70px;
     }
+
+
+
+@media (1850px <= width) {
+
+    .work--smaller {
+        width: 399px;
+        height: 346px;
+        clip-path: path("M299 0H100L0 173L100 346H299L399 173L299 0Z");
+    }
+        .work--smaller .work__label {
+            padding: 21px 90px;
+        }
+}
+
+
+.work--new {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--action-color);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
+}
+
+.work--new:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--action-color-hover);
+    color: #0F33A9;
+}

@@ -9,3 +9,20 @@
     .index__projects {
         margin-top: -157px;
     }
+
+
+
+@media (1850px <= width) {
+
+    .index {
+        /*padding-top: 3px;*/
+        padding-bottom: 47px;
+    }
+        .index__intro {
+
+        }
+
+        .index__projects {
+            margin-top: -158px;
+        }
+}

@@ -20,4 +20,23 @@
     }
 
 
+@media (1850px <= width) {
+
+    .showcase {
+        position: relative;
+    }
+        .showcase__heading {
+            top: 31px;
+            margin-left: 40px;
+            width: 399px;
+            font-size: 50px;
+            line-height: 58px;
+        }
+
+        .showcase__body {
+            /*background-color: #0D25FF;*/
+        }
+}
+
+
 
