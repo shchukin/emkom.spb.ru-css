@@ -36,5 +36,6 @@
         --top-padding: 32px;
         --body-font-size: 17px;
         --body-line-height: 24px;
+        --tiles-gap: 12px;
     }
 }
