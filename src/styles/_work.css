@@ -201,3 +201,19 @@
             }
         }
 }
+    .work__add-project {
+
+    }
+
+    .work__add-project-hover {
+        display: none;
+    }
+
+
+    .work:hover .work__add-project {
+        display: none;
+    }
+
+    .work:hover .work__add-project-hover {
+        display: block;
+    }
