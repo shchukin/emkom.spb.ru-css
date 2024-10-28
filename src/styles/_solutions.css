@@ -84,13 +84,54 @@
             }
 
     .solutions__list {
-
+        display: grid;
+        grid-template-columns: repeat(6, 174px); /* Default to 3 items per row */
+        gap: 0 47px;
+        justify-content: center;
+        padding-top: 456px;
+        padding-bottom: 385px;
+        background-image: url("../vectors/solutions-skeleton.svg");
+        background-size: 1920px 2751px;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
         .solutions__item {
-
+            display: flex;
+            margin-top: -74px !important;
         }
 
+        .solutions__item:nth-child(5n+1),
+        .solutions__item:nth-child(5n+2),
+        .solutions__item:nth-child(5n+3) {
+            grid-column: span 2;
+        }
 
+        .solutions__item:nth-child(5n+4),
+        .solutions__item:nth-child(5n+5) {
+            grid-column: span 3;
+        }
+
+            .solutions__item:nth-child(5n+4) {
+                justify-content: flex-end;
+            }
+                .solutions__item:nth-child(5n+4)::before {
+                    right: 408px;
+                }
+
+            .solutions__item:nth-child(5n+5) {
+                justify-content: flex-start;
+            }
+                .solutions__item:nth-child(5n+5)::before {
+                    left: 408px;
+                }
+
+
+        .solutions__item:nth-child(1),
+        .solutions__item:nth-child(2),
+        .solutions__item:nth-child(3) {
+            position: relative;
+            top: 3px;
+        }
 
 /*padding-top: 412px;*/
 /*background-color: #BFE6FF;*/

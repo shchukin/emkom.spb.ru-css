@@ -63,8 +63,7 @@
     }
 
     .product:hover .product__overlay {
-        opacity: 1;
-        visibility: visible;
+        animation: slide-up 500ms ease;
     }
         .product__heading {
             font-size: 22px;
@@ -72,7 +71,7 @@
         }
 
         .product:hover .product__heading {
-            animation: slide-up 500ms ease;
+
         }
 
         .product__description {
@@ -84,7 +83,6 @@
 
         .product:hover .product__description {
             display: block;
-            animation: slide-up 500ms ease;
         }
 
         .product__more {
@@ -101,5 +99,8 @@
 
         .product:hover .product__more {
             display: block;
-            animation: slide-up 500ms ease;
+        }
+
+        .product__more:hover {
+            background-color: #FFFFFF;
         }
