@@ -26,3 +26,20 @@
             margin-top: -158px;
         }
 }
+
+
+
+@media (width < 740px) {
+
+    .index {
+        /*padding-top: 3px;*/
+        padding-bottom: 0;
+    }
+        .index__intro {
+
+        }
+
+        .index__projects {
+            margin-top: 0;
+        }
+}

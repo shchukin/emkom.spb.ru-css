@@ -3,6 +3,7 @@
 }
     .showcase__heading {
         position: absolute;
+        z-index: 20;
         top: 43px;
         left: 50%;
         margin-left: 100px;
@@ -14,6 +15,14 @@
         color: #0D25FF;
         text-align: center;
     }
+        .showcase__projects-link {
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            text-decoration: none;
+            color: inherit;
+        }
 
     .showcase__body {
         /*background-color: #0D25FF;*/
@@ -32,6 +41,9 @@
             font-size: 50px;
             line-height: 58px;
         }
+            .showcase__projects-link {
+
+            }
 
         .showcase__body {
             /*background-color: #0D25FF;*/
@@ -40,3 +52,53 @@
 
 
 
+
+@media (width < 740px) {
+
+
+    .showcase {
+        position: relative;
+    }
+        .showcase__heading {
+            position: static;
+            /*top: 43px;*/
+            /*left: 50%;*/
+            margin-left: 0;
+            width: auto;
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-size: 40px;*/
+            /*line-height: 49px;*/
+            /*color: #0D25FF;*/
+            /*text-align: center;*/
+            background-color: #0D25FF;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+            .showcase__projects-link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 18px;
+                padding-top: 28px;
+                padding-bottom: 28px;
+            }
+                .showcase__projects-link::before {
+                    content: "";
+                    display: block;
+                    width: 22px;
+                    height: 16px;
+                    background-image: url("../vectors/showcase-projects-link.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+        .showcase__body {
+            margin-top: 5px;
+            padding-top: 50px;
+            padding-bottom: 26px;
+            background-color: #0D25FF;
+            overflow: hidden;
+        }
+}
