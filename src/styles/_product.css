@@ -292,8 +292,8 @@
             /*animation: slide-up 500ms ease;*/
         }
             .product__heading {
-                /*font-size: 30px;*/
-                /*line-height: 34px;*/
+                font-size: 25px;
+                line-height: 30px;
             }
 
             .product:hover .product__heading {
