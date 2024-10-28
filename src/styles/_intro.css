@@ -1,0 +1,138 @@
+.intro {
+    background-image: url("../images/intro/intro-laptop-limited-by-1326@1x.jpg");
+    background-size: 1326px 518px; /* 1326 -- это максимальная ширина доступной в Figma картинки (1) */
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+@media (min-resolution: 1.5dppx) {
+
+    .intro {
+        background-image: url("../images/intro/intro-laptop-limited-by-1326@2x.jpg");
+    }
+}
+
+
+/* На 1326+ приходится использовать растянутую версию (см assets в фигме) (1) */
+@media (1326px <= width < 1850px) {
+
+    .intro {
+        background-image: url("../images/intro/intro-laptop-1326-plus@1x.jpg");
+        background-size: 1850px 518px;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .intro {
+            background-image: url("../images/intro/intro-laptop-1326-plus@2x.jpg");
+        }
+    }
+}
+
+    .intro__wrap {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+        .intro__item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 19px;
+        }
+
+        .intro__item--first {
+            height: 518px;
+            padding-right: 0;
+            padding-bottom: 38px;
+        }
+
+        .intro__item--last {
+            height: 356px;
+            text-align: right;
+            align-items: flex-end;
+            padding-left: 0;
+            padding-bottom: 28px;
+        }
+            .intro__heading {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 22px;
+                line-height: 30px;
+                color: #00F0FF;
+                text-transform: uppercase;
+            }
+
+            .intro__description {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            .intro__action {
+                margin-top: auto;
+            }
+
+
+
+@media (1850px <= width) {
+
+    .intro {
+        background-image: url("../images/intro/intro-monitor@1x.jpg");
+        background-size: 1920px 720px; /* 1326 -- это максимальная ширина доступной в Figma картинки (1) */
+    }
+
+    @media (min-resolution: 1.5dppx) {
+
+        .intro {
+            background-image: url("../images/intro/intro-monitor@1x.jpg");
+        }
+    }
+        .intro__wrap {
+            /*display: grid;*/
+            /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+        }
+            .intro__item {
+                /*display: flex;*/
+                /*flex-direction: column;*/
+                /*align-items: flex-start;*/
+                padding-top: 27px;
+            }
+
+            .intro__item--first {
+                height: 720px;
+                padding-bottom: 73px;
+                /*padding-right: 0;*/
+            }
+
+            .intro__item--last {
+                height: 540px;
+                padding-bottom: 62px;
+                /*text-align: right;*/
+                /*align-items: flex-end;*/
+                /*padding-left: 0;*/
+            }
+                .intro__heading {
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    font-size: 30px;
+                    line-height: 37px;
+                    /*color: #00F0FF;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .intro__description {
+                    margin-top: 13px;
+                    font-size: 22px;
+                    line-height: 27px;
+                    /*color: #FFFFFF;*/
+                }
+
+                .intro__action {
+                    /*margin-top: auto;*/
+                }
+                    .intro__action.button,
+                    .intro__action .button {
+                        width: 280px;
+                    }
+}
