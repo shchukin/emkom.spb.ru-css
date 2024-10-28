@@ -1,0 +1,23 @@
+.showcase {
+    position: relative;
+}
+    .showcase__heading {
+        position: absolute;
+        top: 43px;
+        left: 50%;
+        margin-left: 100px;
+        width: 370px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 40px;
+        line-height: 49px;
+        color: #0D25FF;
+        text-align: center;
+    }
+
+    .showcase__body {
+        /*background-color: #0D25FF;*/
+    }
+
+
+

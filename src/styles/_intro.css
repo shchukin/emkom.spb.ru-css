@@ -1,6 +1,6 @@
 .intro {
-    background-image: url("../images/intro/intro-laptop-limited-by-1326@1x.jpg");
-    background-size: 1326px 518px; /* 1326 -- это максимальная ширина доступной в Figma картинки (1) */
+    background-image: url("../images/intro/intro-laptop-limited-by-1282@1x.jpg");
+    background-size: 1282px 518px; /* 1282 -- это максимальная ширина доступной в Figma картинки (1) */
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -8,23 +8,23 @@
 @media (min-resolution: 1.5dppx) {
 
     .intro {
-        background-image: url("../images/intro/intro-laptop-limited-by-1326@2x.jpg");
+        background-image: url("../images/intro/intro-laptop-limited-by-1282@2x.jpg");
     }
 }
 
 
-/* На 1326+ приходится использовать растянутую версию (см assets в фигме) (1) */
-@media (1326px <= width) {
+/* На 1282+ приходится использовать растянутую версию (см assets в фигме) (1) */
+@media (1282px <= width) {
 
     .intro {
-        background-image: url("../images/intro/intro-laptop-1326-plus@1x.jpg");
+        background-image: url("../images/intro/intro-laptop-1282-plus@1x.jpg");
         background-size: 1850px 518px;
     }
 
     @media (min-resolution: 1.5dppx) {
 
         .intro {
-            background-image: url("../images/intro/intro-laptop-1326-plus@2x.jpg");
+            background-image: url("../images/intro/intro-laptop-1282-plus@2x.jpg");
         }
     }
 }
@@ -81,6 +81,8 @@
 
             .intro__action {
                 margin-top: auto;
+                position: relative;
+                z-index: 10;
             }
 
 
@@ -89,7 +91,7 @@
 
     .intro {
         background-image: url("../images/intro/intro-monitor@1x.jpg");
-        background-size: 1920px 720px; /* 1326 -- это максимальная ширина доступной в Figma картинки (1) */
+        background-size: 1920px 720px; /* 1282 -- это максимальная ширина доступной в Figma картинки (1) */
     }
 
     @media (min-resolution: 1.5dppx) {
@@ -166,7 +168,7 @@
     }
 
 
-    /* На 1326+ приходится использовать растянутую версию (см assets в фигме) (1) */
+    /* На 1282+ приходится использовать растянутую версию (см assets в фигме) (1) */
     @media (376px <= width) {
 
         .intro {

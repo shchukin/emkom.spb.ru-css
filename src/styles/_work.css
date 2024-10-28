@@ -131,3 +131,13 @@
             color: #FFFFFF;
         }
 }
+
+
+.work--smaller {
+    width: 370px;
+    height: 320px;
+    clip-path: path("M278 0H92L0 160L92 320.041H278L370 160L278 0Z");
+}
+    .work--smaller .work__label {
+        padding: 21px 70px;
+    }

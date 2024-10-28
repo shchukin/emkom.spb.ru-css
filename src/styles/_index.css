@@ -1,3 +1,11 @@
 .index {
     padding-top: 3px;
+    padding-bottom: 7px;
 }
+    .index__intro {
+
+    }
+
+    .index__projects {
+        margin-top: -157px;
+    }
