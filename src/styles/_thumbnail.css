@@ -6,7 +6,7 @@
 }
 
 .thumbnail:hover {
-    filter: brightness(110%) contrast(110%);
+    filter: brightness(110%) contrast(105%);
 }
     .thumbnail__image {
         vertical-align: top;

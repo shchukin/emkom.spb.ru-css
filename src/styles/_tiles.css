@@ -168,6 +168,17 @@
         grid-column-start: 2;
         grid-column-end: 4;
     }
+        .tiles-23__image {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter var(--transition-hover);
+        }
+
+        .tiles-23__item:hover .tiles-23__image {
+            filter: brightness(110%) contrast(105%);
+        }
 
 
 
