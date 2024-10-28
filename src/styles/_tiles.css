@@ -1,0 +1,28 @@
+.tiles {
+    display: grid;
+    gap: var(--tiles-gap);
+}
+
+.tiles--3-columns {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: 292px;
+}
+
+.tiles--4-columns {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: 212px;
+}
+    .tiles__item {
+
+    }
+        .tiles__image {
+            vertical-align: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: filter var(--transition-hover);
+        }
+
+        .tiles__item:hover .tiles__image {
+            filter: brightness(110%) contrast(105%);
+        }
