@@ -7,3 +7,13 @@ body {
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
 }
+
+@media (width < 740px) {
+    .menu-expanded body {
+        background-color: #0D25FF;
+        background-image: url("../vectors/menu.svg");
+        background-size: 740px 900px;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+}

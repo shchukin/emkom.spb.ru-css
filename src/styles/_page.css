@@ -18,3 +18,12 @@
     .page__footer {
         flex-shrink: 0;
     }
+
+
+.menu-expanded .page__body {
+    display: none;
+}
+
+.menu-expanded .page__footer {
+    display: none;
+}

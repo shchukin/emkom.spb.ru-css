@@ -158,7 +158,10 @@
         /*top: 0;*/
         /*right: 0;*/
         height: auto;
-        background-color: #0D25FF;
+    }
+
+    .menu-expanded .menu {
+        display: block;
     }
         .menu__wrap {
             /*height: 100%;*/
