@@ -158,9 +158,11 @@
                 slidesPerGroup: 1,
                 spaceBetween: 16,
                 autoHeight: true,
-                speed: 10000,
+                speed: 800,
+                centeredSlides: true, // Центрирование нужно, чтобы активным подсвечивался центральный айтем
+                loop: true, // а чтобы слева, до первого айтема не было дыры приходится зацикливаться
                 autoplay: {
-                    delay: 0,
+                    delay: 2000,
                 },
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),
