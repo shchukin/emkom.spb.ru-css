@@ -75,43 +75,6 @@
 @media (1850px <= width) {
 
     .menu {
-
-    }
-        .menu__wrap {
-
-        }
-            .menu__contacts {
-                /*margin-top: -6px;*/
-                /*width: 277px;*/
-                /*flex-shrink: 0;*/
-            }
-                .menu__phone {
-                    /*margin-left: auto;*/
-                    /*display: flex;*/
-                    /*width: fit-content;*/
-                    /*align-items: center;*/
-                    /*gap: 10px;*/
-                    /*font-weight: 400;*/
-                    /*font-size: 28px;*/
-                    /*line-height: 34px;*/
-                    /*color: #FFFFFF;*/
-                    /*text-decoration: none;*/
-                }
-                    .menu__tel-icon {
-                        /*vertical-align: top;*/
-                        /*margin-top: 2px;*/
-                    }
-
-                .menu__request {
-                    margin-top: 14px;
-                }
-}
-
-
-
-@media (1850px <= width) {
-
-    .menu {
         /*position: absolute;*/
         /*left: 0;*/
         /*top: 0;*/
