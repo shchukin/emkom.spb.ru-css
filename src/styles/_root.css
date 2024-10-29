@@ -2,7 +2,7 @@
     --font: "Montserrat";
     --body-font-size: 22px;
     --body-line-height: 28px;
-    /*--ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);*/
+    --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
     --transition-hover: 100ms ease;
     /*--transition-show: 1200ms var(--ease-out-quint);*/
     --image-fallback: #DFF3FF;

@@ -441,27 +441,45 @@
 }
 
 
-
 @media (width < 740px) {
 
     .carousel--css-default-arrow {
-        /*position: relative;*/
-        /*padding-left: 100px;*/
-        /*padding-right: 100px;*/
+        padding-left: 0;
+        padding-right: 0;
     }
-        .carousel--css-default-arrow .carousel__widget {
-
-        }
-            .carousel--css-default-arrow .swiper {
-
-            }
-                .carousel--css-default-arrow .swiper-wrapper {
-
-                }
-
         .carousel--css-default-arrow .carousel__button {
             display: none;
         }
 }
 
 
+
+
+
+.carousel--css-skin-gallery {
+
+}
+    .carousel--css-skin-gallery .carousel__widget {
+
+    }
+        .carousel--css-skin-gallery .swiper {
+
+        }
+            .carousel--css-skin-gallery .swiper-wrapper {
+
+            }
+                .carousel--css-skin-gallery .swiper-slide {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+                }
+
+                    .carousel--css-skin-gallery .swiper-slide-active {
+                        opacity: 100%;
+                    }
+                        .carousel--css-skin-gallery .thumbnail {
+                            transition: transform 1200ms var(--ease-out-quint);
+                        }
+
+                        .carousel--css-skin-gallery .swiper-slide-active .thumbnail {
+                            transform: scale(130%);
+                        }

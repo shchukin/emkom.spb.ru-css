@@ -130,11 +130,15 @@
                 breakpoints: {
                     740: {
                         slidesPerView: 3,
-                        slidesPerGroup: 3,
+                        slidesPerGroup: 1,
+                        spaceBetween: 70,
+                        speed: 800,
+                        centeredSlides: true, // Центрирование нужно, чтобы активным подсвечивался центральный айтем
+                        loop: true, // а чтобы слева, до первого айтема не было дыры приходится зацикливаться
                     },
                     1850: {
                         slidesPerView: 5,
-                        slidesPerGroup: 5,
+                        slidesPerGroup: 1,
                     }
                 }
             });
