@@ -1,0 +1,22 @@
+.ambitions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+    .ambitions__top-content {
+
+    }
+
+    .ambitions__gallery {
+        margin-top: 60px;
+    }
+
+    .ambitions__bottom-content {
+        margin-top: 60px;
+    }
+
+    .ambitions__action {
+        width: fit-content;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }

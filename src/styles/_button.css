@@ -58,3 +58,9 @@
         line-height: 20px;
     }
 }
+
+
+
+.button--larger {
+    padding: 26px 54px;
+}

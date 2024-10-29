@@ -93,6 +93,7 @@
     /* Карусели */
 
     document.querySelectorAll('.carousel').forEach(($carousel) => {
+
         if( $carousel.classList.contains('carousel--js-init-portfolio') ) {
             new Swiper(document.querySelector('.carousel--js-init-portfolio .swiper'), {
                 slidesPerView: 1,
@@ -107,6 +108,38 @@
                 }
             });
         }
+
+        if( $carousel.classList.contains('carousel--js-init-gallery') ) {
+            new Swiper(document.querySelector('.carousel--js-init-gallery .swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 16,
+                autoHeight: true,
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: $carousel.querySelector('.carousel__button--prev'),
+                    nextEl: $carousel.querySelector('.carousel__button--next'),
+                    disabledClass: 'carousel__button--disabled',
+                },
+                breakpoints: {
+                    740: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 3,
+                    },
+                    1850: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 5,
+                    }
+                }
+            });
+        }
+
     });
 
 

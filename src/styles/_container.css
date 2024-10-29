@@ -18,3 +18,16 @@
         width: auto;
     }
 }
+
+
+
+.container--no-padding-on-smartphone {
+
+}
+    @media (width < 740px) {
+
+        .container--no-padding-on-smartphone {
+            border-left-width: 0;
+            border-right-width: 0;
+        }
+    }
