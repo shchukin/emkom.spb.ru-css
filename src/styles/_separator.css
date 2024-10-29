@@ -14,3 +14,15 @@
         border-bottom-width: 13px;
     }
 }
+
+
+
+@media (width < 740px) {
+
+    .separator {
+        height: 10px;
+        border: none;
+        background-color: #FFFFFF;
+    }
+}
+
