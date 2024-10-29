@@ -378,3 +378,90 @@
             fill: #FFFFFF;
         }
 
+
+
+@media (1850px <= width) {
+
+    .carousel--css-default-arrow {
+        /*position: relative;*/
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+        .carousel--css-default-arrow .carousel__widget {
+
+        }
+            .carousel--css-default-arrow .swiper {
+
+            }
+                .carousel--css-default-arrow .swiper-wrapper {
+
+                }
+
+        .carousel--css-default-arrow .carousel__button {
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*width: 70px;*/
+            /*height: 70px;*/
+            /*margin-top: -35px;*/
+            /*padding: 0;*/
+            /*border: none;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            /*background-color: var(--action-color);*/
+            /*border-radius: 50%;*/
+            /*cursor: pointer;*/
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .carousel--css-default-arrow .carousel__button:hover {
+            /*background-color: var(--action-color-hover);*/
+            /*color: #0D25FF;*/
+        }
+
+        .carousel--css-default-arrow .carousel__button--disabled,
+        .carousel--css-default-arrow .carousel__button--disabled:hover {
+            /*background-color: var(--action-color);*/
+            /*opacity: 10%;*/
+            /*cursor: default;*/
+            /*transition: none;*/
+        }
+
+        .carousel--css-default-arrow .carousel__button--prev {
+            left: -74px;
+        }
+
+        .carousel--css-default-arrow .carousel__button--next {
+            right: -74px;
+        }
+            .carousel--css-default-arrow .carousel__chevron {
+                /*vertical-align: top;*/
+                /*fill: #FFFFFF;*/
+            }
+}
+
+
+
+@media (width < 740px) {
+
+    .carousel--css-default-arrow {
+        /*position: relative;*/
+        /*padding-left: 100px;*/
+        /*padding-right: 100px;*/
+    }
+        .carousel--css-default-arrow .carousel__widget {
+
+        }
+            .carousel--css-default-arrow .swiper {
+
+            }
+                .carousel--css-default-arrow .swiper-wrapper {
+
+                }
+
+        .carousel--css-default-arrow .carousel__button {
+            display: none;
+        }
+}
+
+
