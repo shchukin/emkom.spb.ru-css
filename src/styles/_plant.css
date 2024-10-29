@@ -16,7 +16,7 @@
 
     }
         .plant__heading {
-            font-weight: normal;
+            font-weight: inherit;
             font-size: 22px;
             line-height: 27px;
             color: #FFFFFF;
@@ -54,4 +54,131 @@
                     .plant__label .strong {
                         font-weight: bold;
                     }
-/*653*/
+
+
+
+@media (1850px <= width) {
+
+    .plant {
+        height: 653px;
+        padding-top: 60px;
+        /*background-image: url("../images/plant/plant-desktop@1x.jpg");*/
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+    }
+        .plant__wrap {
+
+        }
+            .plant__heading {
+                /*font-weight: normal;*/
+                /*font-size: 22px;*/
+                /*line-height: 27px;*/
+                /*color: #FFFFFF;*/
+                /*text-align: center;*/
+                /*text-wrap: balance;*/
+            }
+
+            .plant__list {
+                /*margin-top: 50px;*/
+                /*max-width: 870px;*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+                /*display: grid;*/
+                /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+                /*gap: 40px;*/
+            }
+                .plant__item {
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                    /*gap: 36px;*/
+                }
+                    .plant__index {
+                        /*font-size: 46px;*/
+                        /*line-height: 46px;*/
+                        /*color: #FFFFFF;*/
+                    }
+
+                    .plant__label {
+                        /*margin-top: 6px;*/
+                        /*font-weight: 400;*/
+                        /*font-size: 22px;*/
+                        /*line-height: 28px;*/
+                        /*color: #FFFFFF;*/
+                    }
+                        .plant__label .strong {
+                            /*font-weight: bold;*/
+                        }
+}
+
+
+
+@media (width < 740px) {
+
+    .plant {
+        height: 643px;
+        padding-top: 15px;
+        background-image: url("../images/plant/plant-smartphones@1x.jpg");
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+    }
+        @media (min-resolution: 1.5dppx) {
+            .plant {
+                background-image: url("../images/plant/plant-smartphones@2x.jpg");
+            }
+        }
+
+        .plant__wrap {
+
+        }
+            .plant__heading {
+                /*font-weight: inherit;*/
+                font-size: 17px;
+                line-height: 24px;
+                /*color: #FFFFFF;*/
+                /*text-align: center;*/
+                /*text-wrap: balance;*/
+            }
+
+            .plant__list {
+                margin-top: 26px;
+                /*max-width: 870px;*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+                display: block;
+                /*grid-template-columns: repeat(2, minmax(0, 1fr));*/
+                /*gap: 40px;*/
+            }
+                .plant__item {
+                    margin-top: 13px;
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                    gap: 0;
+                }
+
+                .plant__item:first-child {
+                    margin-top: 0;
+                }
+
+                    .plant__index {
+                        width: 72px;
+                        flex-shrink: 0;
+                        /*font-size: 46px;*/
+                        /*line-height: 46px;*/
+                        /*color: #FFFFFF;*/
+                    }
+
+                    .plant__label {
+                        margin-top: 10px;
+                        /*font-weight: 400;*/
+                        font-size: 17px;
+                        line-height: 22px;
+                        /*color: #FFFFFF;*/
+                    }
+                        .plant__label .strong {
+                            /*font-weight: bold;*/
+                        }
+}
+
+
