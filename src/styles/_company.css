@@ -62,7 +62,7 @@
                     display: block;
                     width: 53px;
                     height: 31px;
-                    background-image: url("../vectors/arrow-2.svg");
+                    background-image: url("../vectors/company-arrow-laptop.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center center;
@@ -152,7 +152,7 @@
                         /*display: block;*/
                         width: 72px;
                         height: 31px;
-                        background-image: url("../vectors/arrow-3.svg");
+                        background-image: url("../vectors/company-arrow-monitor.svg");
                         /*background-size: contain;*/
                         /*background-repeat: no-repeat;*/
                         /*background-position: center center;*/
@@ -248,7 +248,7 @@
                     text-transform: none;
                 }
                     .company__specialization::after {
-                        background-image: url("../vectors/arrow-4.svg");
+                        background-image: url("../vectors/company-arrow-smartphone.svg");
                         background-size: 30px 30px;
                         left: 0;
                         right: 0;

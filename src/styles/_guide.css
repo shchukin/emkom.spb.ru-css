@@ -1,0 +1,220 @@
+.guide {
+    padding-top: 33px;
+    padding-bottom: 63px;
+    background-image: linear-gradient(#0D25FF, #0099FF);
+}
+    .guide__wrap {
+
+    }
+        .guide__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: inherit;
+            font-size: 22px;
+            line-height: 28px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .guide__list {
+            display: flex;
+            justify-content: center;
+            gap: 42px;
+            margin-top: 54px;
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+            .guide__item {
+                position: relative;
+                width: 194px;
+                height: 168px;
+                background-image: url("../vectors/guide-laptop.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #0D25FF;
+                text-align: center;
+                text-transform: uppercase;
+            }
+                .guide__item::after {
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: 50%;
+                    margin-left: 5px;
+                    margin-top: -8px;
+                    display: block;
+                    width: 32px;
+                    height: 16px;
+                    background-image: url("../vectors/guide-arrow-laptop.svg");
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .guide__item:last-child::after {
+                    display: none;
+                }
+
+
+
+@media (1850px <= width) {
+
+    .guide {
+        padding-top: 43px;
+        padding-bottom: 81px;
+        /*background-image: linear-gradient(#0D25FF, #0099FF);*/
+    }
+        .guide__wrap {
+
+        }
+            .guide__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 37px;
+                /*color: #FFFFFF;*/
+                /*text-align: center;*/
+            }
+
+            .guide__list {
+                /*display: flex;*/
+                /*justify-content: center;*/
+                gap: 68px;
+                margin-top: 57px;
+                /*margin-bottom: 0;*/
+                /*padding-left: 0;*/
+                /*list-style: none;*/
+            }
+                .guide__item {
+                    /*position: relative;*/
+                    width: 244px;
+                    height: 212px;
+                    background-image: url("../vectors/guide-monitor.svg");
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: center;*/
+                    /*font-weight: bold;*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                    /*color: #0D25FF;*/
+                    /*text-align: center;*/
+                    /*text-transform: uppercase;*/
+                }
+                    .guide__item::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 100%;*/
+                        /*top: 50%;*/
+                        margin-left: 14px;
+                        margin-top: -8px;
+                        /*display: block;*/
+                        width: 40px;
+                        height: 16px;
+                        background-image: url("../vectors/guide-arrow-monitor.svg");
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: center center;*/
+                    }
+
+                    .guide__item:last-child::after {
+                        /*display: none;*/
+                    }
+}
+
+
+
+@media (width < 740px) {
+
+    .guide {
+        padding-top: 18px;
+        padding-bottom: 41px;
+        /*background-image: linear-gradient(#0D25FF, #0099FF);*/
+    }
+        .guide__wrap {
+
+        }
+            .guide__heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                font-weight: bold;
+                font-size: 17px;
+                line-height: 22px;
+                text-wrap: balance;
+                /*color: #FFFFFF;*/
+                /*text-align: center;*/
+            }
+
+            .guide__list {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /*justify-content: center;*/
+                gap: 0;
+                margin-top: 79px;
+                /*margin-bottom: 0;*/
+                /*padding-left: 0;*/
+                /*list-style: none;*/
+            }
+                .guide__item {
+                    margin-top: -54px;
+                    /*position: relative;*/
+                    width: 184px;
+                    height: 159px;
+                    background-image: url("../vectors/guide-smartphone.svg");
+                    /*background-repeat: no-repeat;*/
+                    /*background-position: center center;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: center;*/
+                    /*font-weight: bold;*/
+                    /*font-size: 16px;*/
+                    /*line-height: 20px;*/
+                    /*color: #0D25FF;*/
+                    /*text-align: center;*/
+                    /*text-transform: uppercase;*/
+                }
+
+                .guide__item:nth-child(even) {
+                    margin-left: 146px;
+                }
+
+                .guide__item:nth-child(odd) {
+                    margin-right: 146px;
+                }
+                    .guide__item::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        left: 50%;
+                        top: 100%;
+                        margin-left: 0;
+                        margin-top: -40px;
+                        /*display: block;*/
+                        width: 21px;
+                        height: 16px;
+                        background-image: url("../vectors/guide-arrow-smartphone.svg");
+                        /*background-repeat: no-repeat;*/
+                        /*background-position: center center;*/
+                    }
+
+                    .guide__item:nth-child(even)::after {
+                        margin-left: -86px;
+                        rotate: 180deg;
+                    }
+
+                    .guide__item:nth-child(odd)::after {
+                        margin-left: 65px;
+                    }
+
+                    .guide__item:last-child::after {
+                        /*display: none;*/
+                    }
+}
+
