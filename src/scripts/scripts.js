@@ -1,6 +1,21 @@
 (function ($) {
 
 
+    /* Глобальные константы */
+
+    let isDesktop; /* т.е. не смартфон, а любой десктоп */
+
+    function initGlobalConstant() {
+        isDesktop = window.matchMedia("(min-width: 740px)").matches;
+    }
+
+    /* При открытии страницы */
+    initGlobalConstant();
+
+    /* При ресайзе страницы */
+    window.addEventListener('resize', initGlobalConstant);
+
+
     /* Инпуты */
 
     /* Select placeholder */
@@ -199,6 +214,54 @@
 
 
 
+    const $html = $('html');
+
+
+    /* Бургер */
+
+    let rememberedPageScrollPosition = 0;
+
+    $('.header__toggle-menu').on('click', function () {
+
+        if (!$html.hasClass('burger-expanded')) {
+
+            if (!isDesktop) {
+                rememberedPageScrollPosition = $(window).scrollTop(); /* Запомнить скролл пользователя, так как display: none на .page его сбросит (смотри .burger-expanded .page) */
+            }
+
+            $html.addClass('burger-expanded');
+
+            if (!isDesktop) {
+                $(window).scrollTop(0); /* При открытии меню, его скролл должен быть в начале */
+            }
+
+        } else {
+
+            $html.removeClass('burger-expanded');
+
+            if (!isDesktop) {
+                $(window).scrollTop(rememberedPageScrollPosition);/* При закрытии меню скролл должен быть там, где пользователь его оставил */
+            }
+        }
+    });
+
+
+    $(document).on('click', function (event) {
+        if (!$(event.target).closest('.menu__navigation, .menu__contacts, .header__toggle-menu, .header__detachable-part').length) {
+            $html.removeClass('burger-expanded');
+        }
+    });
+
+
+    $(document).on('keyup', function (event) {
+        if (event.keyCode === 27) {
+            $html.removeClass('burger-expanded');
+        }
+    });
+
+    $('.header__close-menu').on('click', function () {
+        $html.removeClass('burger-expanded');
+    })
 
 
 

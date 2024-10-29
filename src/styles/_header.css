@@ -8,7 +8,7 @@
         align-items: center;
         justify-content: space-between;
     }
-        .header__show-menu {
+        .header__toggle-menu {
             display: none;
         }
 
@@ -32,7 +32,7 @@
             /*align-items: center;*/
             /*justify-content: space-between;*/
         }
-            .header__show-menu {
+            .header__toggle-menu {
                 display: block;
                 margin-left: calc(-1 * var(--container-padding));
                 width: calc(68px + 2*var(--container-padding));
@@ -50,7 +50,7 @@
                 cursor: pointer;
             }
 
-            .menu-expanded .header__show-menu {
+            .burger-expanded .header__toggle-menu {
                 background-image: url("../vectors/burger-expanded.svg");
             }
 

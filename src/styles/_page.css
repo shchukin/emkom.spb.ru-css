@@ -20,10 +20,10 @@
     }
 
 
-.menu-expanded .page__body {
+.burger-expanded .page__body {
     display: none;
 }
 
-.menu-expanded .page__footer {
+.burger-expanded .page__footer {
     display: none;
 }

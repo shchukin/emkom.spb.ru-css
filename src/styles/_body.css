@@ -9,7 +9,7 @@ body {
 }
 
 @media (width < 740px) {
-    .menu-expanded body {
+    .burger-expanded body {
         background-color: #0D25FF;
         background-image: url("../vectors/menu.svg");
         background-size: 740px 900px;
