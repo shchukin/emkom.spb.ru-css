@@ -1,0 +1,10 @@
+.hide-on-monitor {
+
+}
+
+@media (1850px <= width) {
+
+    .hide-on-monitor {
+        display: none;
+    }
+}
