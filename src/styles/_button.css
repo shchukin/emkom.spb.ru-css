@@ -62,20 +62,22 @@
 
 
 .button--larger {
-    padding: 26px 54px;
+    padding: 27px 54px;
+    font-size: 18px;
 }
 
 @media (1850px <= width) {
 
     .button--larger {
-        padding: 26px 54px;
-        font-size: 20px;
+        padding: 27px 54px;
+        font-size: 18px;
     }
 }
 
 @media (width < 740px) {
 
     .button--larger {
+        width: 100%;
         padding: 14px 20px;
     }
 }

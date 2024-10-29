@@ -34,7 +34,7 @@
 
 
 
-/* Проекты */
+/* Portfolio on desktop */
 
 @media (740px <= width) {
 
@@ -263,6 +263,8 @@
 }
 
 
+/* Portfolio on smartphone */
+
 @media (width < 740px) {
 
     .carousel--css-skin-portfolio-on-smartphone .carousel {
@@ -320,6 +322,7 @@
 
 
 
+/* Default arrows */
 
 .carousel--css-default-arrow {
     position: relative;
@@ -453,69 +456,102 @@
 }
 
 
-
+/* Stories */
 
 @media (740px <= width) {
 
-    .carousel--css-skin-gallery {
+    .carousel--css-skin-stories {
 
     }
-        .carousel--css-skin-gallery .carousel__widget {
+        .carousel--css-skin-stories .carousel__widget {
 
         }
-            .carousel--css-skin-gallery .swiper {
+            .carousel--css-skin-stories .swiper {
 
             }
-                .carousel--css-skin-gallery .swiper-wrapper {
+                .carousel--css-skin-stories .swiper-wrapper {
 
                 }
-                    .carousel--css-skin-gallery .swiper-slide {
+                    .carousel--css-skin-stories .swiper-slide {
                         padding-top: 40px;
                         padding-bottom: 40px;
                     }
 
-                        .carousel--css-skin-gallery .swiper-slide-active {
+                        .carousel--css-skin-stories .swiper-slide-active {
                             opacity: 100%;
                         }
-                            .carousel--css-skin-gallery .thumbnail {
+                            .carousel--css-skin-stories .thumbnail {
                                 transition: transform 1200ms var(--ease-out-quint);
                             }
 
-                            .carousel--css-skin-gallery .swiper-slide-active .thumbnail {
+                            .carousel--css-skin-stories .swiper-slide-active .thumbnail {
                                 transform: scale(130%);
                             }
 }
 
-.carousel--css-skin-gallery {
+.carousel--css-skin-stories {
 
 }
-    .carousel--css-skin-gallery .carousel__widget {
+    .carousel--css-skin-stories .carousel__widget {
 
     }
 
     @media (min-width: 450px) {
-        .carousel--css-skin-gallery .carousel__widget {
+        .carousel--css-skin-stories .carousel__widget {
             padding-left: 16px;
             padding-right: 16px;
         }
     }
 
-        .carousel--css-skin-gallery .swiper {
+        .carousel--css-skin-stories .swiper {
 
         }
-            .carousel--css-skin-gallery .swiper-wrapper {
+            .carousel--css-skin-stories .swiper-wrapper {
 
             }
-                .carousel--css-skin-gallery .swiper-slide {
+                .carousel--css-skin-stories .swiper-slide {
 
                 }
-                    .carousel--css-skin-gallery .swiper-slide-active {
+                    .carousel--css-skin-stories .swiper-slide-active {
 
                     }
-                        .carousel--css-skin-gallery .thumbnail {
+                        .carousel--css-skin-stories .thumbnail {
 
                         }
 
-                        .carousel--css-skin-gallery .swiper-slide-active .thumbnail {
+                        .carousel--css-skin-stories .swiper-slide-active .thumbnail {
 
                         }
+
+
+/* Folder */
+
+
+.carousel--css-skin-folder {
+
+}
+    .carousel--css-skin-folder .carousel__widget {
+
+    }
+        .carousel--css-skin-folder .swiper {
+
+        }
+            .carousel--css-skin-folder .swiper-wrapper {
+                transition-timing-function: linear;
+            }
+                .carousel--css-skin-folder .swiper-slide {
+
+                }
+
+                    .carousel--css-skin-folder .swiper-slide-active {
+
+                    }
+                        .carousel--css-skin-folder .thumbnail {
+
+                        }
+
+                        .carousel--css-skin-folder .swiper-slide-active .thumbnail {
+
+                        }
+
+

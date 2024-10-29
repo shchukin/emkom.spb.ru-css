@@ -1,0 +1,8 @@
+.certificate-preview {
+    display: block;
+}
+    .certificate-preview__image {
+        vertical-align: top;
+        width: 100%;
+        height: auto;
+    }

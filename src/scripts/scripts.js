@@ -95,7 +95,7 @@
     document.querySelectorAll('.carousel').forEach(($carousel) => {
 
         if( $carousel.classList.contains('carousel--js-init-portfolio') ) {
-            new Swiper(document.querySelector('.carousel--js-init-portfolio .swiper'), {
+            new Swiper($carousel.querySelector('.swiper'), {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
                 autoHeight: true,
@@ -109,8 +109,8 @@
             });
         }
 
-        if( $carousel.classList.contains('carousel--js-init-gallery') ) {
-            new Swiper(document.querySelector('.carousel--js-init-gallery .swiper'), {
+        if( $carousel.classList.contains('carousel--js-init-stories') ) {
+            new Swiper($carousel.querySelector('.swiper'), {
                 slidesPerView: 1,
                 slidesPerGroup: 1,
                 spaceBetween: 16,
@@ -147,6 +147,47 @@
                         speed: 800,
                         centeredSlides: true, // Центрирование нужно, чтобы активным подсвечивался центральный айтем
                         loop: true, // а чтобы слева, до первого айтема не было дыры приходится зацикливаться
+                    }
+                }
+            });
+        }
+
+        if( $carousel.classList.contains('carousel--js-init-folder') ) {
+            new Swiper($carousel.querySelector('.swiper'), {
+                slidesPerView: 1,
+                slidesPerGroup: 1,
+                spaceBetween: 16,
+                autoHeight: true,
+                speed: 10000,
+                autoplay: {
+                    delay: 0,
+                },
+                pagination: {
+                    el: $carousel.querySelector('.carousel__pagination'),
+                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    bulletClass: 'carousel__bullet',
+                    bulletActiveClass: 'carousel__bullet--current',
+                    clickable: true
+                },
+                navigation: {
+                    prevEl: $carousel.querySelector('.carousel__button--prev'),
+                    nextEl: $carousel.querySelector('.carousel__button--next'),
+                    disabledClass: 'carousel__button--disabled',
+                },
+                breakpoints: {
+                    400: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
+                    740: {
+                        slidesPerView: 3,
+                        slidesPerGroup: 1,
+                        spaceBetween: 54,
+                    },
+                    1850: {
+                        slidesPerView: 5,
+                        slidesPerGroup: 1,
+                        spaceBetween: 84,
                     }
                 }
             });

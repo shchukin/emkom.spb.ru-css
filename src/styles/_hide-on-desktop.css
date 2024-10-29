@@ -1,0 +1,9 @@
+.hide-on-desktop {
+
+}
+
+@media (740px <= width) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
