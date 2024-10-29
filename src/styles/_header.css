@@ -20,7 +20,7 @@
 
 
 
-@media (1850px <= width) {
+@media (width < 740px) {
 
     .header {
         /*height: var(--header-height);*/
@@ -33,7 +33,25 @@
             /*justify-content: space-between;*/
         }
             .header__show-menu {
-                /*display: none;*/
+                display: block;
+                margin-left: calc(-1 * var(--container-padding));
+                width: calc(68px + 2*var(--container-padding));
+                height: 100%;
+                border: none;
+                padding: 0;
+                background-color: transparent;
+                background-image: url("../vectors/burger.svg");
+                background-size: 48px 49px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                cursor: pointer;
+            }
+
+            .menu-expanded .header__show-menu {
+                background-image: url("../vectors/burger-expanded.svg");
             }
 
             .header__branding {
