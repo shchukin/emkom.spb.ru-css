@@ -54,21 +54,28 @@
     .ambitions {
         padding-top: 30px;
         padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
     }
         .ambitions__top-content {
-
+            order: 1;
         }
 
         .ambitions__gallery {
             margin-top: 30px;
+            order: 2;
+            width: 100%; /* чтобы не ломался swiper внутри */
         }
 
         .ambitions__bottom-content {
             margin-top: 30px;
+            order: 4;
         }
 
         .ambitions__action {
             margin-top: 30px;
+            order: 3;
         }
             .ambitions__action .button {
                 width: 100%;
