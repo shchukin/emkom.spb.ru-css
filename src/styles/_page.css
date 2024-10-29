@@ -20,10 +20,14 @@
     }
 
 
-.burger-expanded .page__body {
-    display: none;
-}
 
-.burger-expanded .page__footer {
-    display: none;
+@media (width < 740px) {
+
+    .burger-expanded .page__body {
+        display: none;
+    }
+
+    .burger-expanded .page__footer {
+        display: none;
+    }
 }
