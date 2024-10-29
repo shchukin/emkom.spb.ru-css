@@ -4,3 +4,13 @@
     border-top: 10px solid #FFFFFF;
     border-bottom: 10px solid #FF0000;
 }
+
+
+@media (1850px <= width) {
+
+    .separator {
+        height: 39px;
+        border-top-width: 13px;
+        border-bottom-width: 13px;
+    }
+}
