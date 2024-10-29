@@ -25,3 +25,19 @@
         background-image: url("../images/logo/logo@3x.png");
     }
 }
+
+
+
+.logo--larger {
+    width: 189px;
+    height: 49px;
+}
+
+
+@media (1850px <= width) {
+
+    .logo--larger {
+        width: 287px;
+        height: 73px;
+    }
+}

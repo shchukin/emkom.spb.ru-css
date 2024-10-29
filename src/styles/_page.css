@@ -7,6 +7,10 @@
         flex-shrink: 0;
     }
 
+    .page__menu {
+
+    }
+
     .page__body {
         flex-grow: 1;
     }

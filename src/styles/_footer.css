@@ -119,22 +119,7 @@
 
             .footer__request {
                 margin-top: 101px;
-                display: block;
-                padding: 17px;
                 width: 100%;
-                border: 1px solid #00F0FF;
-                box-shadow: 0 4px 4px rgb(0 0 0 / 5%);
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 20px;
-                color: #00F0FF;
-                text-align: center;
-                text-decoration: none;
-                transition: background-color var(--transition-hover);
-            }
-
-            .footer__request:hover {
-                background-color: rgb(255 255 255 / 10%);
             }
 
 
@@ -262,22 +247,6 @@
 
                 .footer__request {
                     margin-top: 55px;
-                    /*display: block;*/
-                    /*padding: 17px;*/
-                    /*width: 100%;*/
-                    /*border: 1px solid #00F0FF;*/
-                    /*box-shadow: 0 4px 4px rgb(0 0 0 / 10%);*/
-                    /*font-weight: bold;*/
-                    /*font-size: 16px;*/
-                    /*line-height: 20px;*/
-                    /*color: #00F0FF;*/
-                    /*text-align: center;*/
-                    /*text-decoration: none;*/
-                    /*transition: background-color var(--transition-hover);*/
-                }
-
-                .footer__request:hover {
-                    /*background-color: rgb(255 255 255 / 10%);*/
                 }
 }
 
@@ -363,25 +332,9 @@
                     left: 0;
                     right: 0;
                     bottom: 128px;
-                    /*margin-top: 101px;*/
-                    /*display: block;*/
                     width: fit-content;
                     margin-left: auto;
                     margin-right: auto;
-                    padding: 8px 14px;
-                    /*border: 1px solid #00F0FF;*/
-                    /*box-shadow: 0 4px 4px rgb(0 0 0 / 10%);*/
-                    /*font-weight: bold;*/
-                    /*font-size: 16px;*/
-                    /*line-height: 20px;*/
-                    /*color: #00F0FF;*/
-                    /*text-align: center;*/
-                    /*text-decoration: none;*/
-                    /*transition: background-color var(--transition-hover);*/
-                }
-
-                .footer__request:hover {
-                    /*background-color: rgb(255 255 255 / 10%);*/
                 }
 }
 
