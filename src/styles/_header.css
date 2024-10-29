@@ -27,7 +27,13 @@
         /*background-color: #0D25FF;*/
     }
         .header__detachable-part {
-            /*height: 100%;*/
+            position: fixed;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: var(--header-height);
+            background-color: #0D25FF;
             /*display: flex;*/
             /*align-items: center;*/
             /*justify-content: space-between;*/
