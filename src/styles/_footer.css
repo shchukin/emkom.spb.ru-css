@@ -67,7 +67,7 @@
                         line-height: 21px;
                         color: #FFFFFF;
                         text-decoration: 1px underline transparent;
-                        text-underline-offset: 2px;
+                        text-underline-offset: 3px;
                         transition: text-decoration-color var(--transition-hover);
                     }
 
