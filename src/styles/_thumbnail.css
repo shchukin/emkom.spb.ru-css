@@ -15,3 +15,12 @@
         height: auto;
     }
 
+
+
+
+@media (width < 740px) {
+    .thumbnail__image {
+        aspect-ratio: 360 / 240;
+        object-fit: cover;
+    }
+}

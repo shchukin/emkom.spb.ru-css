@@ -455,6 +455,36 @@
 
 
 
+@media (740px <= width) {
+
+    .carousel--css-skin-gallery {
+
+    }
+        .carousel--css-skin-gallery .carousel__widget {
+
+        }
+            .carousel--css-skin-gallery .swiper {
+
+            }
+                .carousel--css-skin-gallery .swiper-wrapper {
+
+                }
+                    .carousel--css-skin-gallery .swiper-slide {
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+                    }
+
+                        .carousel--css-skin-gallery .swiper-slide-active {
+                            opacity: 100%;
+                        }
+                            .carousel--css-skin-gallery .thumbnail {
+                                transition: transform 1200ms var(--ease-out-quint);
+                            }
+
+                            .carousel--css-skin-gallery .swiper-slide-active .thumbnail {
+                                transform: scale(130%);
+                            }
+}
 
 .carousel--css-skin-gallery {
 
@@ -462,6 +492,14 @@
     .carousel--css-skin-gallery .carousel__widget {
 
     }
+
+    @media (min-width: 450px) {
+        .carousel--css-skin-gallery .carousel__widget {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
         .carousel--css-skin-gallery .swiper {
 
         }
@@ -469,17 +507,15 @@
 
             }
                 .carousel--css-skin-gallery .swiper-slide {
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-                }
 
+                }
                     .carousel--css-skin-gallery .swiper-slide-active {
-                        opacity: 100%;
+
                     }
                         .carousel--css-skin-gallery .thumbnail {
-                            transition: transform 1200ms var(--ease-out-quint);
+
                         }
 
                         .carousel--css-skin-gallery .swiper-slide-active .thumbnail {
-                            transform: scale(130%);
+
                         }

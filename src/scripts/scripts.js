@@ -128,6 +128,10 @@
                     disabledClass: 'carousel__button--disabled',
                 },
                 breakpoints: {
+                    450: {
+                        slidesPerView: 2,
+                        slidesPerGroup: 2,
+                    },
                     740: {
                         slidesPerView: 3,
                         slidesPerGroup: 1,
