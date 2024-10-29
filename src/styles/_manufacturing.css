@@ -4,6 +4,7 @@
 }
     .manufacturing__preview {
         height: 540px;
+        background-color: #0089F5;
         background-image: url("../images/manufacturing/manufacturing-desktop@1x.jpg");
         background-size: cover;
         background-repeat: no-repeat;
