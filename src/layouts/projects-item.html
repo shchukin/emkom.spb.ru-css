@@ -103,7 +103,7 @@
                                 +7 (812) 389-41-14
                             </a>
                             <div class="menu__request">
-                                <a class="request-button" href="#">
+                                <a class="request-button mfp-handler" href="#request">
                                     Оставить заявку
                                 </a>
                             </div>
@@ -261,13 +261,61 @@
                                 Написать сообщение
                             </a>
                             <div class="footer__request">
-                                <a class="request-button" href="#">
+                                <a class="request-button mfp-handler" href="#request">
                                     Оставить заявку
                                 </a>
                             </div>
                         </div>
                     </div>
                 </footer>
+            </div>
+        </div>
+
+        <div class="window mfp-hide" id="request">
+            <button class="window__close mfp-close" type="button">
+                <svg class="window__cross" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <path d="M11.584 12.998.27 24.31l1.414 1.414 11.314-11.313 11.314 11.313 1.414-1.414-11.314-11.313L25.726 1.684 24.312.27 12.998 11.583 1.684.27.27 1.684l11.314 11.314Z"/>
+                </svg>
+            </button>
+            <div class="request">
+                <h2 class="request__heading">
+                    Заполните форму
+                </h2>
+                <div class="request__description">
+                    Заявка вас ни к чему не обязывает!<br class="hide-on-smartphone"> Вы можете отказаться в любой момент
+                </div>
+                <form class="request__form">
+                    <div class="request__field">
+                        <label class="label" for="name">
+                            Введите имя
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="text" placeholder="Иван" id="name">
+                        </div>
+                    </div>
+                    <div class="request__field">
+                        <label class="label" for="email">
+                            Введите E-mail
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="email">
+                        </div>
+                    </div>
+                    <div class="request__field">
+                        <label class="label" for="email">
+                            Введите номер телефона
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="tel" placeholder="+7 (812) 389-41-14" id="tel">
+                        </div>
+                    </div>
+                    <div class="request__submit">
+                        <button class="button button--submit" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="request__note">
+                        Мы свяжемся с вами в течении 15&nbsp;минут
+                    </div>
+                </form>
             </div>
         </div>
 
