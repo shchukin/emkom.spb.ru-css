@@ -81,3 +81,29 @@
         padding: 14px 20px;
     }
 }
+
+
+
+
+.button--submit {
+    padding: 15px 24px;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+@media (1850px <= width) {
+
+    .button--submit {
+        padding: 27px 54px;
+        font-size: 18px;
+    }
+}
+
+@media (width < 740px) {
+
+    .button--submit {
+        width: 100%;
+        padding: 14px 20px;
+    }
+}
