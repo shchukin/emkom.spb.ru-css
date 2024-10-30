@@ -84,7 +84,7 @@
             .work__preview {
                 width: 300px;
                 height: 260px;
-                clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z");
+                clip-path: path("M255 0H85L0 147L85 294H255L340 147L255 0Z");
             }
         }
 
@@ -164,7 +164,7 @@
         height: 320px;
         clip-path: path("M278 0H92L0 160L92 320.041H278L370 160L278 0Z");
     }
-        .work__preview::after {
+        .work--smaller .work__preview::after {
             clip-path: path("M278 0H92L0 160L92 320.041H278L370 160L278 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
         }
 
