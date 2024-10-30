@@ -7,3 +7,15 @@
     line-height: 20px;
     color: #0F33A9;
 }
+
+
+
+@media (1850px <= width) {
+
+    .label {
+        padding-bottom: 13px;
+        font-weight: inherit;
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

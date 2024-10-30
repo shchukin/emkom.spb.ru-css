@@ -5,7 +5,7 @@
         vertical-align: top;
         width: 100%;
         height: 56px;
-        padding: 16px 20px;
+        padding: 25px 30px;
         background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
         background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
         border: none;
@@ -19,6 +19,14 @@
         -webkit-tap-highlight-color: transparent;
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover);
+    }
+
+    @media (1850px <= width) {
+        .input__widget {
+            height: 76px;
+            font-size: 22px;
+            line-height: 26px;
+        }
     }
 
     .input__widget::placeholder {

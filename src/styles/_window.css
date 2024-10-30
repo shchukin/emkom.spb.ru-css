@@ -28,8 +28,51 @@
             width: 26px;
             height: 26px;
             fill: var(--action-color);
+            transition: fill var(--transition-hover);
         }
 
         .window__close:hover .window__cross {
             fill: var(--action-color-hover);
         }
+
+
+
+@media (1850px <= width) {
+
+    .window {
+        /*position: relative;*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+        /*text-align: left;*/
+        /*background-color: #E6F5FF;*/
+        /*border-radius: 11px;*/
+    }
+        .window__close {
+            /*position: absolute;*/
+            /*right: 0 !important;*/
+            /*top: 0 !important;*/
+            /*width: 60px;*/
+            /*height: 60px;*/
+            /*text-indent: 200%;*/
+            /*white-space: nowrap;*/
+            /*overflow: hidden !important;*/
+            /*opacity: 1;*/
+        }
+            .window__cross {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*right: 0;*/
+                /*bottom: 0;*/
+                /*margin: auto;*/
+                /*width: 26px;*/
+                /*height: 26px;*/
+                /*fill: var(--action-color);*/
+                /*transition: fill var(--transition-hover);*/
+            }
+
+            .window__close:hover .window__cross {
+                /*fill: var(--action-color-hover);*/
+            }
+}
