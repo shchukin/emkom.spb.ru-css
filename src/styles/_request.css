@@ -106,5 +106,57 @@
     .request {
         width: 100%;
         max-width: 440px;
+        padding: 22px 16px 24px;
     }
+        .request__heading {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: 600;*/
+            font-size: 22px;
+            line-height: 28px;
+            /*color: #0D25FF;*/
+            /*text-align: center;*/
+        }
+
+        .request__description {
+            /*margin-top: 5px;*/
+            max-width: none;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*font-size: 15px;*/
+            /*line-height: 20px;*/
+            /*color: #0F33A9;*/
+            /*text-align: center;*/
+        }
+
+
+        .request__form {
+            /*margin-top: 22px;*/
+        }
+            .request__field {
+                /*margin-top: 26px;*/
+            }
+
+            .request__field:first-child {
+                /*margin-top: 0;*/
+            }
+
+            .request__submit {
+                /*margin-top: 49px;*/
+                /*max-width: 309px;*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+            }
+                .request__submit .button {
+                    /*width: 100%;*/
+                }
+
+            .request__note {
+                /*margin-top: 18px;*/
+                /*font-size: 15px;*/
+                /*line-height: 20px;*/
+                /*color: #0F33A9;*/
+                /*text-align: center;*/
+            }
 }
+

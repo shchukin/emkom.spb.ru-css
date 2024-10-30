@@ -5,7 +5,7 @@
         vertical-align: top;
         width: 100%;
         height: 56px;
-        padding: 25px 30px;
+        padding: 16px 20px;
         background-color: #FFFFFF; /* reset grey background in some cases, such as <select> */
         background-clip: padding-box; /* hack for iOS to make box-shadow works (same as border-radius in the past) */
         border: none;
@@ -24,6 +24,7 @@
     @media (1850px <= width) {
         .input__widget {
             height: 76px;
+            padding: 25px 30px;
             font-size: 22px;
             line-height: 26px;
         }

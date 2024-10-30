@@ -58,9 +58,10 @@
 @import url("_smartphone-only.css");
 @import url("_plant.css");
 @import url("_hide-on-monitor.css");
+@import url("_hide-on-desktop.css");
+@import url("_hide-on-smartphone.css");
 @import url("_folder.css");
 @import url("_certificate-preview.css");
-@import url("_hide-on-desktop.css");
 @import url("_logo.css");
 @import url("_request-button.css");
 @import url("_menu.css");

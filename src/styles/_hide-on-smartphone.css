@@ -1,0 +1,6 @@
+@media (width < 740px) {
+
+    .hide-on-smartphone {
+        display: none;
+    }
+}
