@@ -32,7 +32,14 @@
                 font-size: 22px;
                 line-height: 27px;
                 color: #00F0FF;
+                text-decoration: 1.75px underline transparent;
+                text-underline-offset: 2px;
+                transition: text-decoration-color var(--transition-hover);
                 text-transform: uppercase;
+            }
+
+            .solutions__category:hover {
+                text-decoration-color: currentColor;
             }
 
             .solutions__category--left {
