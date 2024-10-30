@@ -29,6 +29,7 @@
             height: 26px;
             fill: var(--action-color);
             transition: fill var(--transition-hover);
+            pointer-events: none; /* mfp глючит, когда кликаем именно во внутренности */
         }
 
         .window__close:hover .window__cross {
