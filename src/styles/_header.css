@@ -41,7 +41,7 @@
             .header__toggle-menu {
                 display: block;
                 margin-left: calc(-1 * var(--container-padding));
-                width: calc(68px + 2*var(--container-padding));
+                width: calc(68px + 2 * var(--container-padding));
                 height: 100%;
                 border: none;
                 padding: 0;
