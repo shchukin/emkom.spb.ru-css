@@ -247,7 +247,7 @@
 
 
     $(document).on('click', function (event) {
-        if (!$(event.target).closest('.menu__navigation, .menu__contacts, .header__toggle-menu, .header__detachable-part').length) {
+        if (!$(event.target).closest('.menu__navigation, .menu__contacts, .header__toggle-menu, .header__detachable-part, .mfp-bg, .mfp-wrap').length) {
             $html.removeClass('burger-expanded');
         }
     });
