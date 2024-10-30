@@ -44,7 +44,7 @@
 
         <!-- assets -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1730207544">
+        <link rel="stylesheet" href="../styles/styles.css?1730278051">
 
     </head>
     <body>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             <div class="menu__section">
-                                <a class="menu__link" href="#">
+                                <a class="menu__link menu__link--current" href="#">
                                     Услуги
                                 </a>
                                 <div class="menu__sub-menu">
@@ -103,7 +103,7 @@
                                 +7 (812) 389-41-14
                             </a>
                             <div class="menu__request">
-                                <a class="request-button" href="#">
+                                <a class="request-button mfp-handler" href="#request">
                                     Оставить заявку
                                 </a>
                             </div>
@@ -115,15 +115,15 @@
                 <div class="solutions">
                     <div class="solutions__head">
                         <div class="solutions__features">
-                            <div class="solutions__category solutions__category--left">
+                            <a class="solutions__category solutions__category--left" href="#systems">
                                 Монтаж и проектирование<br> инженерных систем
-                            </div>
-                            <div class="solutions__category solutions__category--right">
-                                комплексное производство<br> модульных решений
-                            </div>
+                            </a>
+                            <a class="solutions__category solutions__category--right" href="#modules">
+                                Комплексное производство<br> модульных решений
+                            </a>
                         </div>
                         <div class="solutions__intro container">
-                            <h1 class="solutions__heading">
+                            <h1 class="solutions__heading" id="systems">
                                 Монтаж<br class="solutions__heading-line-break"> и проектирование инженерных систем
                             </h1>
                             <p class="solutions__description">
@@ -134,325 +134,559 @@
                     <div class="solutions__list">
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-a@2x.jpg 2x"
-                                         src="../temp/products/product-a@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Дизель электро<br> станции&nbsp;ДЭС
-                                    </h2>
-                                    <div class="product__description">
-                                        Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-a@2x.jpg 2x"
+                                                 src="../temp/products/product-a@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Дизель электро<br> станции&nbsp;ДЭС
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-b@2x.jpg 2x"
-                                         src="../temp/products/product-b@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Газо-поршневые<br> установки&nbsp;ГПУ
-                                    </h2>
-                                    <div class="product__description">
-                                        Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-a@2x.jpg 2x"
+                                                 src="../temp/products/product-a@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Дизель электро<br> станции&nbsp;ДЭС
+                                        </h2>
+                                        <div class="product__description">
+                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-c@2x.jpg 2x"
-                                         src="../temp/products/product-c@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Блочно-модульные<br> котельные БМК на<br> разных видах<br> топлива
-                                    </h2>
-                                    <div class="product__description">
-                                        Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-b@2x.jpg 2x"
+                                                 src="../temp/products/product-b@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Газо-поршневые<br> установки&nbsp;ГПУ
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-d@2x.jpg 2x"
-                                         src="../temp/products/product-d@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Тепловой пункт<br> ИТП
-                                    </h2>
-                                    <div class="product__description">
-                                        Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-b@2x.jpg 2x"
+                                                 src="../temp/products/product-b@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Газо-поршневые<br> установки&nbsp;ГПУ
+                                        </h2>
+                                        <div class="product__description">
+                                            Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-e@2x.jpg 2x"
-                                         src="../temp/products/product-e@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Трансформаторные<br> подстанции БКТП
-                                    </h2>
-                                    <div class="product__description">
-                                        Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-c@2x.jpg 2x"
+                                                 src="../temp/products/product-c@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Блочно-модульные<br> котельные БМК на<br> разных видах<br> топлива
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-f@2x.jpg 2x"
-                                         src="../temp/products/product-f@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Тяговые<br> подстанции<br> БКТП
-                                    </h2>
-                                    <div class="product__description">
-                                        Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-c@2x.jpg 2x"
+                                                 src="../temp/products/product-c@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Блочно-модульные<br> котельные БМК на<br> разных видах<br> топлива
+                                        </h2>
+                                        <div class="product__description">
+                                            Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-g@2x.jpg 2x"
-                                         src="../temp/products/product-g@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Распределительные<br> подстанции<br> РУ 0,4/6/10/35 кВ
-                                    </h2>
-                                    <div class="product__description">
-                                        Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-d@2x.jpg 2x"
+                                                 src="../temp/products/product-d@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Тепловой пункт<br> ИТП
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-h@2x.jpg 2x"
-                                         src="../temp/products/product-h@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Аппаратные<br> блок-модули
-                                    </h2>
-                                    <div class="product__description">
-                                        Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-d@2x.jpg 2x"
+                                                 src="../temp/products/product-d@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Тепловой пункт<br> ИТП
+                                        </h2>
+                                        <div class="product__description">
+                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-i@2x.jpg 2x"
-                                         src="../temp/products/product-i@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Центры<br> обработки<br> данных ЦОД
-                                    </h2>
-                                    <div class="product__description">
-                                        Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-e@2x.jpg 2x"
+                                                 src="../temp/products/product-e@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Трансформаторные<br> подстанции БКТП
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-j@2x.jpg 2x"
-                                         src="../temp/products/product-j@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Модули<br> водоподготовки
-                                    </h2>
-                                    <div class="product__description">
-                                        Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-e@2x.jpg 2x"
+                                                 src="../temp/products/product-e@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Трансформаторные<br> подстанции БКТП
+                                        </h2>
+                                        <div class="product__description">
+                                            Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-k@2x.jpg 2x"
-                                         src="../temp/products/product-k@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Модули локальных<br> очистных<br> сооружений
-                                    </h2>
-                                    <div class="product__description">
-                                        Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-f@2x.jpg 2x"
+                                                 src="../temp/products/product-f@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Тяговые<br> подстанции<br> БКТП
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="solutions__item">
-                            <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-l@2x.jpg 2x"
-                                         src="../temp/products/product-l@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Насосная<br> станция
-                                    </h2>
-                                    <div class="product__description">
-                                        Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
-                                    </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-f@2x.jpg 2x"
+                                                 src="../temp/products/product-f@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Тяговые<br> подстанции<br> БКТП
+                                        </h2>
+                                        <div class="product__description">
+                                            Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
                         <div class="solutions__item">
                             <a class="product" href="#">
-                                <div class="product__preview">
-                                    <img class="product__image"
-                                         srcset="../temp/products/product-m@2x.jpg 2x"
-                                         src="../temp/products/product-m@1x.jpg"
-                                         width="396"
-                                         height="456"
-                                         alt=""
-                                    >
-                                </div>
-                                <div class="product__color-overlay"></div>
-                                <div class="product__overlay">
-                                    <h2 class="product__heading">
-                                        Компрессорная
-                                    </h2>
-                                    <div class="product__description">
-                                        Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-g@2x.jpg 2x"
+                                                 src="../temp/products/product-g@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Распределительные<br> подстанции<br> РУ 0,4/6/10/35 кВ
+                                        </div>
                                     </div>
-                                    <div class="product__more">
-                                        Подробнее
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-g@2x.jpg 2x"
+                                                 src="../temp/products/product-g@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Распределительные<br> подстанции<br> РУ 0,4/6/10/35 кВ
+                                        </h2>
+                                        <div class="product__description">
+                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-h@2x.jpg 2x"
+                                                 src="../temp/products/product-h@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Аппаратные<br> блок-модули
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-h@2x.jpg 2x"
+                                                 src="../temp/products/product-h@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Аппаратные<br> блок-модули
+                                        </h2>
+                                        <div class="product__description">
+                                            Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-i@2x.jpg 2x"
+                                                 src="../temp/products/product-i@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Центры<br> обработки<br> данных ЦОД
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-i@2x.jpg 2x"
+                                                 src="../temp/products/product-i@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Центры<br> обработки<br> данных ЦОД
+                                        </h2>
+                                        <div class="product__description">
+                                            Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-j@2x.jpg 2x"
+                                                 src="../temp/products/product-j@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Модули<br> водоподготовки
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-j@2x.jpg 2x"
+                                                 src="../temp/products/product-j@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Модули<br> водоподготовки
+                                        </h2>
+                                        <div class="product__description">
+                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-k@2x.jpg 2x"
+                                                 src="../temp/products/product-k@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Модули локальных<br> очистных<br> сооружений
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-k@2x.jpg 2x"
+                                                 src="../temp/products/product-k@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Модули локальных<br> очистных<br> сооружений
+                                        </h2>
+                                        <div class="product__description">
+                                            Газопоршневые установки являются самостоятельным электрогенерирующим устройством, состоящим из смонтированного в блок-модуле специальной конструкции газопоршневого двигателя.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-l@2x.jpg 2x"
+                                                 src="../temp/products/product-l@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Насосная<br> станция
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-l@2x.jpg 2x"
+                                                 src="../temp/products/product-l@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Насосная<br> станция
+                                        </h2>
+                                        <div class="product__description">
+                                            Предназначены для теплоснабжения жилых, общественных и промышленных объектов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="solutions__item">
+                            <a class="product" href="#">
+                                <div class="product__inner">
+                                    <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-m@2x.jpg 2x"
+                                                 src="../temp/products/product-m@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__front-heading">
+                                            Компрессорная
+                                        </div>
+                                    </div>
+                                    <div class="product__side product__side--back">
+                                        <div class="product__preview">
+                                            <img class="product__image"
+                                                 srcset="../temp/products/product-m@2x.jpg 2x"
+                                                 src="../temp/products/product-m@1x.jpg"
+                                                 width="396"
+                                                 height="456"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                        </div>
+                                        <h2 class="product__heading">
+                                            Компрессорная
+                                        </h2>
+                                        <div class="product__description">
+                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                        </div>
+                                        <div class="product__more">
+                                            Подробнее
+                                        </div>
                                     </div>
                                 </div>
                             </a>
@@ -460,7 +694,7 @@
                     </div>
                     <div class="solutions__sub-section">
                         <div class="solutions__sub-head container">
-                            <h2 class="solutions__sub-heading">
+                            <h2 class="solutions__sub-heading" id="modules">
                                 Строительно-монтажные работы
                             </h2>
                             <div class="solutions__sub-description">
@@ -472,50 +706,86 @@
                         <div class="solutions__sub-list">
                             <div class="solutions__sub-item">
                                 <a class="product" href="#">
-                                    <div class="product__preview">
-                                        <img class="product__image"
-                                             srcset="../temp/products/product-n@2x.jpg 2x"
-                                             src="../temp/products/product-n@1x.jpg"
-                                             width="396"
-                                             height="456"
-                                             alt=""
-                                        >
-                                    </div>
-                                    <div class="product__color-overlay"></div>
-                                    <div class="product__overlay">
-                                        <h2 class="product__heading">
-                                            Проектирование
-                                        </h2>
-                                        <div class="product__description">
-                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                    <div class="product__inner">
+                                        <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                            <div class="product__preview">
+                                                <img class="product__image"
+                                                     srcset="../temp/products/product-m@2x.jpg 2x"
+                                                     src="../temp/products/product-m@1x.jpg"
+                                                     width="396"
+                                                     height="456"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="product__front-heading">
+                                                Проектирование
+                                            </div>
                                         </div>
-                                        <div class="product__more">
-                                            Подробнее
+                                        <div class="product__side product__side--back">
+                                            <div class="product__preview">
+                                                <img class="product__image"
+                                                     srcset="../temp/products/product-n@2x.jpg 2x"
+                                                     src="../temp/products/product-n@1x.jpg"
+                                                     width="396"
+                                                     height="456"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                            </div>
+                                            <h2 class="product__heading">
+                                                Проектирование
+                                            </h2>
+                                            <div class="product__description">
+                                                Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                            </div>
+                                            <div class="product__more">
+                                                Подробнее
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                             <div class="solutions__sub-item">
                                 <a class="product" href="#">
-                                    <div class="product__preview">
-                                        <img class="product__image"
-                                             srcset="../temp/products/product-o@2x.jpg 2x"
-                                             src="../temp/products/product-o@1x.jpg"
-                                             width="396"
-                                             height="456"
-                                             alt=""
-                                        >
-                                    </div>
-                                    <div class="product__color-overlay"></div>
-                                    <div class="product__overlay">
-                                        <h2 class="product__heading">
-                                            Строительно-<br>монтажные<br> работы
-                                        </h2>
-                                        <div class="product__description">
-                                            Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                    <div class="product__inner">
+                                        <div class="product__side product__side--front" role="presentation" aria-hidden="true">
+                                            <div class="product__preview">
+                                                <img class="product__image"
+                                                     srcset="../temp/products/product-o@2x.jpg 2x"
+                                                     src="../temp/products/product-o@1x.jpg"
+                                                     width="396"
+                                                     height="456"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="product__front-heading">
+                                                Строительно-<br>монтажные<br> работы
+                                            </div>
                                         </div>
-                                        <div class="product__more">
-                                            Подробнее
+                                        <div class="product__side product__side--back">
+                                            <div class="product__preview">
+                                                <img class="product__image"
+                                                     srcset="../temp/products/product-n@2x.jpg 2x"
+                                                     src="../temp/products/product-n@1x.jpg"
+                                                     width="396"
+                                                     height="456"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="product__overlay" role="presentation" aria-hidden="true">
+
+                                            </div>
+                                            <h2 class="product__heading">
+                                                Строительно-<br>монтажные<br> работы
+                                            </h2>
+                                            <div class="product__description">
+                                                Блок-модуль имеет конструкцию, предназначенную для размещения в нем автономных источников электроснабжения с использованием дизельных генераторов.
+                                            </div>
+                                            <div class="product__more">
+                                                Подробнее
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
@@ -577,13 +847,61 @@
                                 Написать сообщение
                             </a>
                             <div class="footer__request">
-                                <a class="request-button" href="#">
+                                <a class="request-button mfp-handler" href="#request">
                                     Оставить заявку
                                 </a>
                             </div>
                         </div>
                     </div>
                 </footer>
+            </div>
+        </div>
+
+        <div class="window mfp-hide" id="request">
+            <button class="window__close mfp-close" type="button">
+                <svg class="window__cross" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <path d="M11.584 12.998.27 24.31l1.414 1.414 11.314-11.313 11.314 11.313 1.414-1.414-11.314-11.313L25.726 1.684 24.312.27 12.998 11.583 1.684.27.27 1.684l11.314 11.314Z"/>
+                </svg>
+            </button>
+            <div class="request">
+                <h2 class="request__heading">
+                    Заполните форму
+                </h2>
+                <div class="request__description">
+                    Заявка вас ни к чему не обязывает!<br class="hide-on-smartphone"> Вы можете отказаться в любой момент
+                </div>
+                <form class="request__form">
+                    <div class="request__field">
+                        <label class="label" for="name">
+                            Введите имя
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="text" placeholder="Иван" id="name">
+                        </div>
+                    </div>
+                    <div class="request__field">
+                        <label class="label" for="email">
+                            Введите E-mail
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="email">
+                        </div>
+                    </div>
+                    <div class="request__field">
+                        <label class="label" for="email">
+                            Введите номер телефона
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="tel" placeholder="+7 (812) 389-41-14" id="tel">
+                        </div>
+                    </div>
+                    <div class="request__submit">
+                        <button class="button button--submit" type="submit">Отправить заявку</button>
+                    </div>
+                    <div class="request__note">
+                        Мы свяжемся с вами в течении 15&nbsp;минут
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -594,7 +912,7 @@
         <script src="../vendors/inputmask.phone/phone-codes/phone-ru.min.js"></script>
 
         <script src="../vendors/swiper/swiper-bundle.min.js"></script>
-        <script src="../scripts/scripts.js?1730207544"></script>
+        <script src="../scripts/scripts.js?1730278051"></script>
 
     </body>
 </html>
