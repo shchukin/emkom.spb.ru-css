@@ -10,11 +10,13 @@
     color: #00F0FF;
     text-align: center;
     text-decoration: none;
-    transition: background-color var(--transition-hover);
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
 }
 
 .request-button:hover {
-    background-color: rgb(255 255 255 / 10%);
+    background-color: #07F0FF;
+    color: #0F33A8;
 }
 
 
