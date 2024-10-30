@@ -9,12 +9,12 @@
     --container-padding: 24px;
     --action-color: #0D25FF;
     --action-color-hover: #00F0FF;
-    /*--input-border: #B3B3B3;*/
-    /*--input-border-hover-and-focus: #7E7E7E;*/
-    /*--placeholder-color: #999999;*/
-    /*--disabled-background: #F6F6F6;*/
-    /*--disabled-color: #999999;*/
-    /*--error: #FF0033;*/
+    --input-border: #B3B3B3;
+    --input-border-hover-and-focus: var(--action-color-hover);
+    --placeholder-color: #C9C9C9;
+    --disabled-background: #F6F6F6;
+    --disabled-color: #C9C9C9;
+    --error: #FF0033;
     --top-padding: 42px;
     --bottom-padding: calc(var(--top-padding) * 2);
     --header-height: 140px;
