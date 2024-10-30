@@ -179,7 +179,7 @@
             height: 346px;
             clip-path: path("M299 0H100L0 173L100 346H299L399 173L299 0Z");
         }
-            .work__preview::after {
+            .work--smaller .work__preview::after {
                 clip-path: path("M299 0H100L0 173L100 346H299L399 173L299 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
             }
 
