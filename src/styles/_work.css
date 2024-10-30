@@ -14,7 +14,13 @@
             height: 100%;
             object-fit: cover;
             background-color: var(--image-fallback);
+            transition: transform 500ms var(--ease-out-quint);
         }
+
+        .work:hover .work__image {
+            transform: scale(115%);
+        }
+
 
         .work__preview::after {
             content: "";
@@ -24,11 +30,13 @@
             right: 0;
             bottom: 0;
             background-image: linear-gradient(rgb(217 217 217 / 20%), rgb(15 51 169 / 91%));
+            clip-path: path("M183 0L0 106V316L183 422L366 316V106L183 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
             transition: opacity var(--transition-hover);
         }
 
+
         .work:hover .work__preview::after {
-            opacity: 80%;
+            /*opacity: 80%;*/
         }
 
     .work__label {
@@ -95,7 +103,16 @@
                 /*right: 0;*/
                 /*bottom: 0;*/
                 background-image: linear-gradient(rgb(217 217 217 / 20%), rgb(0 240 255 / 91%));
+                clip-path: path("M255 0H85L0 147L85 294H255L340 147L255 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
                 /*transition: opacity var(--transition-hover);*/
+            }
+
+            @media (width < 350px) {
+                .work__preview::after {
+                    width: 300px;
+                    height: 260px;
+                    clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
+                }
             }
 
             .work:hover .work__preview::after {
@@ -135,6 +152,11 @@
 
 
 
+
+.work--smaller {
+
+}
+
 @media (740px <= width) {
 
     .work--smaller {
@@ -142,6 +164,10 @@
         height: 320px;
         clip-path: path("M278 0H92L0 160L92 320.041H278L370 160L278 0Z");
     }
+        .work__preview::after {
+            clip-path: path("M278 0H92L0 160L92 320.041H278L370 160L278 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
+        }
+
         .work--smaller .work__label {
             padding: 21px 70px;
         }
@@ -153,9 +179,13 @@
             height: 346px;
             clip-path: path("M299 0H100L0 173L100 346H299L399 173L299 0Z");
         }
-        .work--smaller .work__label {
-            padding: 21px 90px;
-        }
+            .work__preview::after {
+                clip-path: path("M299 0H100L0 173L100 346H299L399 173L299 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
+            }
+
+            .work--smaller .work__label {
+                padding: 21px 90px;
+            }
     }
 }
 
@@ -174,8 +204,7 @@
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    transition: background-color var(--transition-hover),
-                color var(--transition-hover);
+    transition: background-color var(--transition-hover);
 }
 
 .work--new:hover {
@@ -187,6 +216,7 @@
 }
 
 @media (width < 740px) {
+
     .work--new {
         width: 340px;
         height: 294px;

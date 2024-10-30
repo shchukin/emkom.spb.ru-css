@@ -187,7 +187,7 @@
             transform: none;
         }
 
-        
+
         .product__side {
             clip-path: path("M274 80L137 0L0 80V238L137 318L274 238V80Z");
         }
