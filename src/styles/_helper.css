@@ -1,6 +1,6 @@
 .helper {
     padding-top: 6px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 20px;
     color: #7E7E7E;
 }
@@ -11,4 +11,19 @@
 
 .helper + .helper {
     padding-top: 4px;
+}
+
+
+
+@media (1850px <= width) {
+
+    .helper {
+        padding-top: 8px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .helper + .helper {
+        padding-top: 6px;
+    }
 }

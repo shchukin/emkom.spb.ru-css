@@ -102,8 +102,14 @@
 textarea.input__widget {
     height: auto; /* user rows="" attribute to set a default height */
     min-height: 50px; /* 1 row */
-    max-height: calc(10*24px + 2*11px + 2*2px); /* rows + vertical paddings + vertical borders */
+    max-height: calc(10*24px + 2*16px); /* rows + vertical paddings */
     resize: vertical;
+}
+
+@media (1850px <= width) {
+    textarea.input__widget {
+        max-height: calc(10*25px + 2*26px); /* rows + vertical paddings */
+    }
 }
 /* stylelint-enable */
 
@@ -126,6 +132,7 @@ select.input__widget:hover {
 
 /* Disabled */
 select.input__widget:disabled {
+    background-color: var(--disabled-background);
     cursor: default;
 }
 
