@@ -246,6 +246,56 @@
             </div>
         </div>
 
+        <div class="window mfp-hide" id="feedback">
+            <button class="window__close mfp-close" type="button">
+                <svg class="window__cross" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                    <path d="M11.584 12.998.27 24.31l1.414 1.414 11.314-11.313 11.314 11.313 1.414-1.414-11.314-11.313L25.726 1.684 24.312.27 12.998 11.583 1.684.27.27 1.684l11.314 11.314Z"/>
+                </svg>
+            </button>
+            <div class="form">
+                <h2 class="form__heading">
+                    Напишите нам
+                </h2>
+                <form class="form__body" data-js-form>
+                    <div class="form__field">
+                        <label class="label" for="feedback-name">
+                            Введите имя
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="text" placeholder="Иван" id="feedback-name">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label class="label" for="feedback-email">
+                            Введите E-mail *
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="feedback-email" required>
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label class="label" for="feedback-tel">
+                            Введите номер телефона
+                        </label>
+                        <div class="input">
+                            <input class="input__widget" type="tel" placeholder="+7 (812) 389-41-14" id="feedback-tel">
+                        </div>
+                    </div>
+                    <div class="form__field">
+                        <label class="label" for="feedback-message">
+                            Сообщение
+                        </label>
+                        <div class="input">
+                            <textarea class="input__widget" placeholder="Введите текст обращения" id="feedback-message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <div class="form__submit">
+                        <button class="button button--submit" type="submit" data-js-submit>Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
         <div class="window mfp-hide" id="request">
             <button class="window__close mfp-close" type="button">
                 <svg class="window__cross" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
@@ -259,38 +309,58 @@
                 <div class="form__description">
                     Заявка вас ни к чему не обязывает!<br class="hide-on-smartphone"> Вы можете отказаться в любой момент
                 </div>
-                <form class="form__body">
+                <form class="form__body" data-js-form>
                     <div class="form__field">
-                        <label class="label" for="name">
+                        <label class="label" for="request-name">
                             Введите имя
                         </label>
                         <div class="input">
-                            <input class="input__widget" type="text" placeholder="Иван" id="name">
+                            <input class="input__widget" type="text" placeholder="Иван" id="request-name">
                         </div>
                     </div>
                     <div class="form__field">
-                        <label class="label" for="email">
-                            Введите E-mail
+                        <label class="label" for="request-email">
+                            Введите E-mail *
                         </label>
                         <div class="input">
-                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="email">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="request-email" required>
                         </div>
                     </div>
                     <div class="form__field">
-                        <label class="label" for="email">
+                        <label class="label" for="request-phone">
                             Введите номер телефона
                         </label>
                         <div class="input">
-                            <input class="input__widget" type="tel" placeholder="+7 (812) 389-41-14" id="tel">
+                            <input class="input__widget" type="tel" placeholder="+7 (812) 389-41-14" id="request-phone">
                         </div>
                     </div>
                     <div class="form__submit">
-                        <button class="button button--submit" type="submit">Отправить заявку</button>
+                        <button class="button button--submit" type="submit" data-js-submit>Отправить заявку</button>
                     </div>
                     <div class="form__note">
                         Мы свяжемся с вами в течении 15&nbsp;минут
                     </div>
                 </form>
+            </div>
+        </div>
+
+        <div class="notifications-center">
+            <div class="alert alert--success" data-js-alert-success style="display: none;">
+                <div class="alert__label">
+                    Данные получены. Спасибо за обращение!
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
+            </div>
+            <div class="alert alert--danger" data-js-alert-failure style="display: none;">
+                <div class="alert__label">
+                    Во время отправки данных произошла ошибка.<br class="desktop-only">
+                    Проверьте ваше соединение и попробуйте позже.
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
             </div>
         </div>
 
