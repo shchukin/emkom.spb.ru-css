@@ -94,28 +94,7 @@
 
             .footer__feedback {
                 margin-top: 8px;
-                display: flex;
-                align-items: center;
-                gap: 17px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                font-weight: bold;
-                font-size: 17px;
-                line-height: 22px;
-                text-transform: uppercase;
-                color: #FFFFFF;
-                text-decoration: 1.5px underline transparent;
-                text-underline-offset: 3px;
             }
-
-            .footer__feedback:hover {
-                text-decoration-color: currentColor;
-            }
-                .footer__envelop {
-                    margin-top: 1px;
-                    vertical-align: top;
-                    fill: currentColor;
-                }
 
             .footer__request {
                 margin-top: 101px;
@@ -222,28 +201,7 @@
 
                 .footer__feedback {
                     /*margin-top: 8px;*/
-                    /*display: flex;*/
-                    /*align-items: center;*/
-                    /*gap: 17px;*/
-                    /*padding-top: 8px;*/
-                    /*padding-bottom: 8px;*/
-                    /*font-weight: bold;*/
-                    /*font-size: 17px;*/
-                    /*line-height: 22px;*/
-                    /*text-transform: uppercase;*/
-                    /*color: #FFFFFF;*/
-                    /*text-decoration: 1.5px underline transparent;*/
-                    /*text-underline-offset: 3px;*/
                 }
-
-                .footer__feedback:hover {
-                    /*text-decoration-color: currentColor;*/
-                }
-                    .footer__envelop {
-                        /*margin-top: 1px;*/
-                        /*vertical-align: top;*/
-                        /*fill: currentColor;*/
-                    }
 
                 .footer__request {
                     margin-top: 55px;
@@ -286,7 +244,7 @@
                 }
 
                 .footer__legalities {
-                    margin-top: 143px;
+                    margin-top: 190px;
                     text-align: center;
                     /*font-weight: 400;*/
                     /*font-size: 12px;*/
@@ -313,7 +271,7 @@
                     right: 0;
                     margin-left: auto;
                     margin-right: auto;
-                    bottom: 84px;
+                    bottom: 110px;
                     /*display: block;*/
                     /*width: fit-content;*/
                     /*font-weight: normal;*/
@@ -324,14 +282,20 @@
                 }
 
                 .footer__feedback {
-                    display: none;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: fit-content;
+                    bottom: 70px;
                 }
 
                 .footer__request {
                     position: absolute;
                     left: 0;
                     right: 0;
-                    bottom: 128px;
+                    bottom: 168px;
                     width: fit-content;
                     margin-left: auto;
                     margin-right: auto;
