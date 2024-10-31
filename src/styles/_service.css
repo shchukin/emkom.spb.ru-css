@@ -1,4 +1,5 @@
 .service {
+    overflow: hidden; /* Обрезаем карусели */
     padding-top: 3px;
     padding-bottom: var(--bottom-padding);
 }
