@@ -169,15 +169,14 @@
 
         if( $carousel.classList.contains('carousel--js-init-folder') ) {
             new Swiper($carousel.querySelector('.swiper'), {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
+                slidesPerView: 2,
+                slidesPerGroup: 2,
                 spaceBetween: 16,
                 autoHeight: true,
                 speed: 800,
-                centeredSlides: true, // Центрирование нужно, чтобы активным подсвечивался центральный айтем
                 loop: true, // а чтобы слева, до первого айтема не было дыры приходится зацикливаться
                 autoplay: {
-                    delay: 2000,
+                    delay: 1000,
                 },
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),

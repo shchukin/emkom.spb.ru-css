@@ -562,14 +562,13 @@
 
 
 
-@media (width < 740px) {
+@media (width < 400px) {
 
     .carousel--css-skin-folder {
-        overflow: hidden;
+
     }
         .carousel--css-skin-folder .carousel__widget {
-            padding-left: 80px;
-            padding-right: 80px;
+
         }
             .carousel--css-skin-folder .swiper {
                 overflow: visible;
