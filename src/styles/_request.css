@@ -1,8 +1,8 @@
-.request {
+.form {
     width: 510px;
     padding: 27px 56px 30px;
 }
-    .request__heading {
+    .form__heading {
         margin-top: 0;
         margin-bottom: 0;
         font-weight: 600;
@@ -12,7 +12,7 @@
         text-align: center;
     }
 
-    .request__description {
+    .form__description {
         margin-top: 5px;
         max-width: 320px;
         margin-left: auto;
@@ -23,32 +23,32 @@
         text-align: center;
     }
 
-    .request__form {
+    .form__body {
         margin-top: 22px;
     }
 
-    .request__heading + .request__form {
+    .form__heading + .form__body {
         margin-top: 20px;
     }
-        .request__field {
+        .form__field {
             margin-top: 26px;
         }
 
-        .request__field:first-child {
+        .form__field:first-child {
             margin-top: 0;
         }
 
-        .request__submit {
+        .form__submit {
             margin-top: 49px;
             max-width: 309px;
             margin-left: auto;
             margin-right: auto;
         }
-            .request__submit .button {
+            .form__submit .button {
                 width: 100%;
             }
 
-        .request__note {
+        .form__note {
             margin-top: 18px;
             font-size: 15px;
             line-height: 20px;
@@ -59,49 +59,49 @@
 
 @media (1850px <= width) {
 
-    .request {
+    .form {
         width: 628px;
         padding: 44px 80px 50px;
     }
-        .request__heading {
+        .form__heading {
             font-size: 40px;
             line-height: 49px;
         }
 
-        .request__description {
+        .form__description {
             margin-top: 35px;
             font-size: 22px;
             line-height: 28px;
             max-width: none;
         }
 
-        .request__form {
+        .form__body {
             margin-top: 56px;
         }
 
-        .request__heading + .request__form {
+        .form__heading + .form__body {
             margin-top: 34px;
         }
-            .request__field {
+            .form__field {
                 margin-top: 39px;
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 440px;
             }
 
-            .request__field:first-child {
+            .form__field:first-child {
                 margin-top: 0;
             }
 
-            .request__submit {
+            .form__submit {
                 margin-top: 57px;
                 max-width: 356px;
             }
-                .request__submit .button {
+                .form__submit .button {
 
                 }
 
-        .request__note {
+        .form__note {
             margin-top: 23px;
             font-size: 16px;
             line-height: 24px;
@@ -111,12 +111,12 @@
 
 @media (width < 740px) {
 
-    .request {
+    .form {
         width: 100%;
         max-width: 440px;
         padding: 22px 16px 24px;
     }
-        .request__heading {
+        .form__heading {
             /*margin-top: 0;*/
             /*margin-bottom: 0;*/
             /*font-weight: 600;*/
@@ -126,7 +126,7 @@
             /*text-align: center;*/
         }
 
-        .request__description {
+        .form__description {
             /*margin-top: 5px;*/
             max-width: none;
             /*margin-left: auto;*/
@@ -138,33 +138,33 @@
         }
 
 
-        .request__form {
+        .form__body {
             /*margin-top: 22px;*/
         }
 
-        .request__heading + .request__form {
+        .form__heading + .form__body {
             /*margin-top: 16px;*/
         }
 
-            .request__field {
+            .form__field {
                 /*margin-top: 26px;*/
             }
 
-            .request__field:first-child {
+            .form__field:first-child {
                 /*margin-top: 0;*/
             }
 
-            .request__submit {
+            .form__submit {
                 /*margin-top: 49px;*/
                 /*max-width: 309px;*/
                 /*margin-left: auto;*/
                 /*margin-right: auto;*/
             }
-                .request__submit .button {
+                .form__submit .button {
                     /*width: 100%;*/
                 }
 
-            .request__note {
+            .form__note {
                 /*margin-top: 18px;*/
                 /*font-size: 15px;*/
                 /*line-height: 20px;*/
