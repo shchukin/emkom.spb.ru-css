@@ -1,4 +1,5 @@
 .page {
+    position: relative; /* меню на десктопе абсолютно */
     display: flex;
     flex-direction: column;
     height: 100%;
