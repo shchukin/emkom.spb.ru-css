@@ -227,16 +227,14 @@
                             }
 
         .project__body {
-            display: flex;
-            flex-direction: column;
+
         }
             .project__wrap {
                 padding-bottom: 0;
             }
 
             .project__gallery {
-                margin-top: 16px;
-                order: -1;
+                margin-top: 32px;
             }
 }
 
