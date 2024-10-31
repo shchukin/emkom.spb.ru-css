@@ -1,6 +1,6 @@
 .request {
     width: 510px;
-    padding: 17px 56px 30px;
+    padding: 27px 56px 30px;
 }
     .request__heading {
         margin-top: 0;
@@ -25,6 +25,10 @@
 
     .request__form {
         margin-top: 22px;
+    }
+
+    .request__heading + .request__form {
+        margin-top: 20px;
     }
         .request__field {
             margin-top: 26px;
@@ -73,6 +77,10 @@
 
         .request__form {
             margin-top: 56px;
+        }
+
+        .request__heading + .request__form {
+            margin-top: 34px;
         }
             .request__field {
                 margin-top: 39px;
@@ -133,6 +141,11 @@
         .request__form {
             /*margin-top: 22px;*/
         }
+
+        .request__heading + .request__form {
+            /*margin-top: 16px;*/
+        }
+
             .request__field {
                 /*margin-top: 26px;*/
             }
