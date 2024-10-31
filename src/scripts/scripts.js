@@ -132,7 +132,7 @@
                 autoHeight: true,
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),
-                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    type: "fraction", /* можно переделать на bullets или сделать всю секцию false */
                     bulletClass: 'carousel__bullet',
                     bulletActiveClass: 'carousel__bullet--current',
                     clickable: true
@@ -181,7 +181,7 @@
                 },
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),
-                    type: "bullets", /* переделать на fraction, если слишком много точек */
+                    type: "fraction", /* можно переделать на bullets или сделать всю секцию false */
                     bulletClass: 'carousel__bullet',
                     bulletActiveClass: 'carousel__bullet--current',
                     clickable: true

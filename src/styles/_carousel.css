@@ -34,6 +34,134 @@
 
 
 
+/* Default bullets */
+
+.carousel--css-default-bullets .carousel__pagination {
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* На случай типа fraction: */
+    font-size: 15px;
+    line-height: 20px;
+    color: currentColor;
+    text-align: center;
+}
+    .carousel--css-default-bullets .carousel__bullet {
+        flex-shrink: 0;
+        width: 28px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+        .carousel--css-default-bullets .carousel__bullet::after {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #666666;
+        }
+
+        .carousel--css-default-bullets .carousel__bullet--current::after {
+            background-color: currentColor;
+        }
+
+
+
+
+/* Default arrows */
+
+.carousel--css-default-arrow {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+    .carousel--css-default-arrow .carousel__widget {
+
+    }
+        .carousel--css-default-arrow .swiper {
+
+        }
+            .carousel--css-default-arrow .swiper-wrapper {
+
+            }
+
+    .carousel--css-default-arrow .carousel__button {
+        position: absolute;
+        top: 50%;
+        width: 70px;
+        height: 70px;
+        margin-top: -35px;
+        padding: 0;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--action-color);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .carousel--css-default-arrow .carousel__button:hover {
+        background-color: var(--action-color-hover);
+        color: #0D25FF;
+    }
+
+    .carousel--css-default-arrow .carousel__button--disabled,
+    .carousel--css-default-arrow .carousel__button--disabled:hover {
+        background-color: var(--action-color);
+        opacity: 10%;
+        cursor: default;
+        transition: none;
+    }
+
+    .carousel--css-default-arrow .carousel__button--prev {
+        left: 0;
+    }
+
+    .carousel--css-default-arrow .carousel__button--next {
+        right: 0;
+    }
+        .carousel--css-default-arrow .carousel__chevron {
+            vertical-align: top;
+            fill: #FFFFFF;
+        }
+
+
+
+@media (1850px <= width) {
+
+    .carousel--css-default-arrow {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+        .carousel--css-default-arrow .carousel__button--prev {
+            left: -74px;
+        }
+
+        .carousel--css-default-arrow .carousel__button--next {
+            right: -74px;
+        }
+}
+
+
+@media (width < 740px) {
+
+    .carousel--css-default-arrow {
+        padding-left: 0;
+        padding-right: 0;
+    }
+        .carousel--css-default-arrow .carousel__button {
+            display: none;
+        }
+}
+
+
+
 /* Portfolio on desktop */
 
 @media (740px <= width) {
@@ -96,6 +224,7 @@
                         .carousel--css-skin-full-portfolio-on-desktop .swiper-slide:nth-child(5n+5)::before {
                             left: 408px;
                         }
+
 }
 
 
@@ -168,6 +297,10 @@
                     .carousel--css-skin-short-portfolio-on-desktop .swiper-slide--07 {
                         display: none;
                     }
+
+    .carousel--css-skin-full-portfolio-on-desktop .carousel__pagination {
+        display: none;
+    }
 
 
 
@@ -286,174 +419,8 @@
                         display: flex;
                         justify-content: center;
                     }
-
-        .carousel--css-skin-portfolio-on-smartphone .carousel__pagination {
-            margin-top: 23px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            /* На случай типа fraction: */
-            color: #FFFFFF;
-            text-align: center;
-        }
-            .carousel--css-skin-portfolio-on-smartphone .carousel__bullet {
-                flex-shrink: 0;
-                width: 28px;
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-            }
-                .carousel--css-skin-portfolio-on-smartphone .carousel__bullet::after {
-                    content: "";
-                    display: block;
-                    width: 16px;
-                    height: 16px;
-                    border-radius: 50%;
-                    background-color: #666666;
-                }
-
-                .carousel--css-skin-portfolio-on-smartphone .carousel__bullet--current::after {
-                    background-color: #FFFFFF;
-                }
 }
 
-
-
-
-/* Default arrows */
-
-.carousel--css-default-arrow {
-    position: relative;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-    .carousel--css-default-arrow .carousel__widget {
-
-    }
-        .carousel--css-default-arrow .swiper {
-
-        }
-            .carousel--css-default-arrow .swiper-wrapper {
-
-            }
-
-    .carousel--css-default-arrow .carousel__button {
-        position: absolute;
-        top: 50%;
-        width: 70px;
-        height: 70px;
-        margin-top: -35px;
-        padding: 0;
-        border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--action-color);
-        border-radius: 50%;
-        cursor: pointer;
-        transition: background-color var(--transition-hover);
-    }
-
-    .carousel--css-default-arrow .carousel__button:hover {
-        background-color: var(--action-color-hover);
-        color: #0D25FF;
-    }
-
-    .carousel--css-default-arrow .carousel__button--disabled,
-    .carousel--css-default-arrow .carousel__button--disabled:hover {
-        background-color: var(--action-color);
-        opacity: 10%;
-        cursor: default;
-        transition: none;
-    }
-
-    .carousel--css-default-arrow .carousel__button--prev {
-        left: 0;
-    }
-
-    .carousel--css-default-arrow .carousel__button--next {
-        right: 0;
-    }
-        .carousel--css-default-arrow .carousel__chevron {
-            vertical-align: top;
-            fill: #FFFFFF;
-        }
-
-
-
-@media (1850px <= width) {
-
-    .carousel--css-default-arrow {
-        /*position: relative;*/
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-        .carousel--css-default-arrow .carousel__widget {
-
-        }
-            .carousel--css-default-arrow .swiper {
-
-            }
-                .carousel--css-default-arrow .swiper-wrapper {
-
-                }
-
-        .carousel--css-default-arrow .carousel__button {
-            /*position: absolute;*/
-            /*top: 50%;*/
-            /*width: 70px;*/
-            /*height: 70px;*/
-            /*margin-top: -35px;*/
-            /*padding: 0;*/
-            /*border: none;*/
-            /*display: flex;*/
-            /*align-items: center;*/
-            /*justify-content: center;*/
-            /*background-color: var(--action-color);*/
-            /*border-radius: 50%;*/
-            /*cursor: pointer;*/
-            /*transition: background-color var(--transition-hover);*/
-        }
-
-        .carousel--css-default-arrow .carousel__button:hover {
-            /*background-color: var(--action-color-hover);*/
-            /*color: #0D25FF;*/
-        }
-
-        .carousel--css-default-arrow .carousel__button--disabled,
-        .carousel--css-default-arrow .carousel__button--disabled:hover {
-            /*background-color: var(--action-color);*/
-            /*opacity: 10%;*/
-            /*cursor: default;*/
-            /*transition: none;*/
-        }
-
-        .carousel--css-default-arrow .carousel__button--prev {
-            left: -74px;
-        }
-
-        .carousel--css-default-arrow .carousel__button--next {
-            right: -74px;
-        }
-            .carousel--css-default-arrow .carousel__chevron {
-                /*vertical-align: top;*/
-                /*fill: #FFFFFF;*/
-            }
-}
-
-
-@media (width < 740px) {
-
-    .carousel--css-default-arrow {
-        padding-left: 0;
-        padding-right: 0;
-    }
-        .carousel--css-default-arrow .carousel__button {
-            display: none;
-        }
-}
 
 
 /* Stories */

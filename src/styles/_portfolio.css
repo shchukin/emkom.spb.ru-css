@@ -92,6 +92,7 @@
             order: 2;
             margin-top: 12px;
             background-color: #0D25FF;
+            color: #FFFFFF;
             overflow: hidden; /* обрезаем карусель */
         }
             .portfolio__list-wrap {
