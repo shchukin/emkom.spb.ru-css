@@ -111,6 +111,39 @@
             }
         }
 
+
+/* Если карусель втсавили напрямую из редактора: */
+.wysiwyg .carousel {
+    margin-top: var(--body-line-height);
+    margin-bottom: var(--body-line-height);
+}
+
+.wysiwyg .carousel:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg .carousel:last-child {
+    margin-bottom: 0;
+}
+
+/* Ещё очень может быть кейс, что сам .wysiwyg внутри .inner-container из редактора: */
+@media (740px <= width < 1850px) {
+
+    .inner-container .wysiwyg .carousel {
+        margin-left: -100px;
+        margin-right: -100px;
+    }
+}
+
+@media (1850px <= width) {
+
+    .inner-container .wysiwyg .carousel {
+        margin-left: -282px;
+        margin-right: -282px;
+    }
+}
+
+
 .wysiwyg img {
     width: 100%;
     height: auto;
