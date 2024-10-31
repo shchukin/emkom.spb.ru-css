@@ -90,6 +90,13 @@
         /*background-color: #E6F5FF;*/
         /*border-radius: 11px;*/
     }
+
+    @media (width < 456px) {
+        .window {
+            width: 100%;
+        }
+    }
+
         .window__close {
             /*position: absolute;*/
             /*right: 0 !important;*/
