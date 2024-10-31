@@ -170,13 +170,14 @@
         if( $carousel.classList.contains('carousel--js-init-folder') ) {
             new Swiper($carousel.querySelector('.swiper'), {
                 slidesPerView: 2,
-                slidesPerGroup: 2,
+                slidesPerGroup: 1,
                 spaceBetween: 16,
                 autoHeight: true,
-                speed: 800,
-                loop: true, // а чтобы слева, до первого айтема не было дыры приходится зацикливаться
+                loopFillGroupBlank: true,
+                speed: 600,
+                loop: true,
                 autoplay: {
-                    delay: 1000,
+                    delay: 2000,
                 },
                 pagination: {
                     el: $carousel.querySelector('.carousel__pagination'),
@@ -193,7 +194,7 @@
                 breakpoints: {
                     500: {
                         slidesPerView: 3,
-                        slidesPerGroup: 3,
+                        slidesPerGroup: 1,
                     },
                     740: {
                         slidesPerView: 3,
