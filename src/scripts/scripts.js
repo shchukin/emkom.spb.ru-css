@@ -243,11 +243,32 @@
                         slidesPerGroup: 5,
                         spaceBetween: 84,
                     }
-                }
+                },
+                on: {
+                    init: function () {
+                        toggleNavigationAndPagination(this);
+                    },
+                    resize: function () {
+                        toggleNavigationAndPagination(this);
+                    },
+                },
             });
         }
 
     });
+
+
+    /* Детектим кейс, когда в свайпере недостаточно айтемов для прокрутки хотя бы один раз, и убираем стрелочки/пагинацию */
+    function toggleNavigationAndPagination(swiper) {
+        const totalSlides = swiper.slides.length;
+        const slidesPerView = swiper.params.slidesPerView;
+
+        if (totalSlides <= slidesPerView) {
+            swiper.el.closest('.carousel').classList.add('carousel--not-enough-slides');
+        } else {
+            swiper.el.closest('.carousel').classList.remove('carousel--not-enough-slides');
+        }
+    }
 
 
 
