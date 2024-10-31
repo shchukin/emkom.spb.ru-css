@@ -19,7 +19,7 @@
 /*@import url("_choice.css");*/
 @import url("_wysiwyg.css");
 @import url("_label.css");
-/*@import url("_helper.css");*/
+@import url("_helper.css");
 
 @import url("_mfp.css");
 @import url("_window.css");
@@ -65,5 +65,7 @@
 @import url("_logo.css");
 @import url("_request-button.css");
 @import url("_menu.css");
+@import url("_alert.css");
+@import url("_notifications-center.css");
 
 

@@ -1,4 +1,5 @@
 .button {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     border: none;
@@ -31,14 +32,14 @@
     transition: none;
 }
 
-/*.button:disabled,*/
-/*.button:disabled:hover,*/
-/*.button:disabled:active {*/
-/*    background-color: #F6F6F6;*/
-/*    color: var(--disabled-color);*/
-/*    translate: none;*/
-/*    cursor: default;*/
-/*}*/
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+    background-color: #F6F6F6;
+    color: var(--disabled-color);
+    translate: none;
+    cursor: default;
+}
 
 .button--secondary {
     box-shadow: inset 0 0 0 2px var(--action-color);
@@ -107,3 +108,101 @@
         padding: 14px 20px;
     }
 }
+
+
+
+
+
+@keyframes button-loading-spin {
+    100% { transform: rotate(360deg); }
+}
+
+.button--loading {
+    color: transparent !important;
+    pointer-events: none;
+}
+    .button--loading::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 32px;
+        height: 32px;
+        margin-top: -16px;
+        margin-left: -16px;
+        background-image: url("../vectors/button-loading.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        animation: button-loading-spin 1s steps(12) infinite;
+    }
+
+    @media (1850px <= width) {
+        .button--loading::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+
+.button--success {
+    color: transparent !important;
+    pointer-events: none;
+}
+    .button--success::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin-top: -14px;
+        margin-left: -14px;
+        background-image: url("../vectors/button-success.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1850px <= width) {
+        .button--success::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+
+
+.button--warning {
+    color: transparent !important;
+    pointer-events: none;
+}
+    .button--warning::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: block;
+        width: 28px;
+        height: 28px;
+        margin-top: -14px;
+        margin-left: -14px;
+        background-image: url("../vectors/button-warning.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (1850px <= width) {
+        .button--warning::after {
+            width: 28px;
+            height: 28px;
+            margin-top: -14px;
+            margin-left: -14px;
+        }
+    }
+

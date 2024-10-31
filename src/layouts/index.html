@@ -369,9 +369,9 @@
                 <h2 class="form__heading">
                     Напишите нам
                 </h2>
-                <form class="form__body">
+                <form class="form__body" data-js-form>
                     <div class="form__field">
-                        <label class="label" for="name">
+                        <label class="label" for="feedback-name">
                             Введите имя
                         </label>
                         <div class="input">
@@ -379,15 +379,15 @@
                         </div>
                     </div>
                     <div class="form__field">
-                        <label class="label" for="email">
-                            Введите E-mail
+                        <label class="label" for="feedback-email">
+                            Введите E-mail *
                         </label>
                         <div class="input">
-                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="feedback-email">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="feedback-email" required>
                         </div>
                     </div>
                     <div class="form__field">
-                        <label class="label" for="email">
+                        <label class="label" for="feedback-tel">
                             Введите номер телефона
                         </label>
                         <div class="input">
@@ -403,7 +403,7 @@
                         </div>
                     </div>
                     <div class="form__submit">
-                        <button class="button button--submit" type="submit">Отправить</button>
+                        <button class="button button--submit" type="submit" data-js-submit>Отправить</button>
                     </div>
                 </form>
             </div>
@@ -422,7 +422,7 @@
                 <div class="form__description">
                     Заявка вас ни к чему не обязывает!<br class="hide-on-smartphone"> Вы можете отказаться в любой момент
                 </div>
-                <form class="form__body">
+                <form class="form__body" data-js-form>
                     <div class="form__field">
                         <label class="label" for="request-name">
                             Введите имя
@@ -433,10 +433,10 @@
                     </div>
                     <div class="form__field">
                         <label class="label" for="request-email">
-                            Введите E-mail
+                            Введите E-mail *
                         </label>
                         <div class="input">
-                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="request-email">
+                            <input class="input__widget" type="email" placeholder="ivan@yandex.ru" id="request-email" required>
                         </div>
                     </div>
                     <div class="form__field">
@@ -448,12 +448,32 @@
                         </div>
                     </div>
                     <div class="form__submit">
-                        <button class="button button--submit" type="submit">Отправить заявку</button>
+                        <button class="button button--submit" type="submit" data-js-submit>Отправить заявку</button>
                     </div>
                     <div class="form__note">
                         Мы свяжемся с вами в течении 15&nbsp;минут
                     </div>
                 </form>
+            </div>
+        </div>
+
+        <div class="notifications-center">
+            <div class="alert alert--success" data-js-alert-success style="display: none;">
+                <div class="alert__label">
+                    Данные получены. Спасибо за обращение!
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
+            </div>
+            <div class="alert alert--danger" data-js-alert-failure style="display: none;">
+                <div class="alert__label">
+                    Во время отправки данных произошла ошибка.<br class="desktop-only">
+                    Проверьте ваше соединение и попробуйте позже.
+                </div>
+                <button class="alert__dismiss" type="button">
+                    Закрыть
+                </button>
             </div>
         </div>
 
