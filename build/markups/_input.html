@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1730347354">
+        <link rel="stylesheet" href="../styles/styles.css?1730357210">
     </head>
-    <body>
+    <body style="background: #E6F5FF;">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
@@ -14,27 +14,27 @@
             <h1>.input</h1>
 
             <div class="input">
-                <input class="input__widget" type="text" placeholder="First name">
+                <input class="input__widget" type="text" placeholder="Ваше имя">
             </div>
 
             <br>
 
             <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" value="Konstantin Konstantinopolsky">
+                <input class="input__widget" type="text" placeholder="Ваше имя" value="Константин Константинопольский">
             </div>
 
 
             <br>
             <br>
             <br>
-            <h2>With <a href="_label.html">.label</a> and <a href="_helper.html">.helper</a></h2>
+            <h2>С <a href="_label.html">.label</a> и <a href="_helper.html">.helper</a></h2>
             <p>
-                These two are not part of <b><i>.input</i></b> component. However, they often used together,
-                placed before and after, like so:
+                Эти два компонента, вообще говоря, не часть <b><i>.input</i></b>.
+                Но очень часто используются вместе. Выводим их друг за другом:
             </p>
 
             <label class="label" for="bp24napi">
-                First name
+                Ваше имя
             </label>
 
             <div class="input">
@@ -42,11 +42,11 @@
             </div>
 
             <div class="helper">
-                Can’t be changed later
+                Нельзя будет изменить
             </div>
 
             <p>
-                Also, the same <b><i>.helper</i></b> component will be used to output messages in cases covering errors.
+                Далее этот же компонент <b><i>.helper</i></b> будет использоваться для вывода ошибок.
             </p>
 
             <br>
@@ -55,19 +55,19 @@
             <h2>:disabled</h2>
 
             <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" disabled>
+                <input class="input__widget" type="text" placeholder="Ваше имя" disabled>
             </div>
             <div class="helper">
-                Please choose contract type before filling the name
+                Пожалуйста, сначала выберите контракт
             </div>
 
             <br>
 
             <div class="input">
-                <input class="input__widget" type="text" placeholder="First name" value="Konstantin Konstantinopolsky" disabled>
+                <input class="input__widget" type="text" placeholder="Ваше имя" value="Konstantin Konstantinopolsky" disabled>
             </div>
             <div class="helper">
-                Name can’t be changed
+                Нельзя будет изменить
             </div>
 
 
@@ -76,16 +76,15 @@
             <br>
             <h2>.input--error</h2>
             <p>
-                Despite the fact that native <b><i>:invalid</i></b> attribute is widely supported,
-                we still expect that validation to be coded manually. So here are the classes
-                and error messages coded manually as well.
+                Несмотря на то, что нативный атрибут <b><i>:invalid</i></b> хорошо поддерживается,
+                ожидаем, что валидация будет программироваться вручную. Вот класс и хелпер для вывода ошибок:
             </p>
 
             <div class="input input--error">
                 <input class="input__widget" type="text" placeholder="First name">
             </div>
             <div class="helper helper--error">
-                This field is required
+                Обязательно для заполнения
             </div>
 
             <br>
@@ -94,26 +93,26 @@
                 <input class="input__widget" type="email" placeholder="Email" value="foobar@example.">
             </div>
             <div class="helper helper--error">
-                Email is not valid
+                Неверный формат почты
             </div>
 
             <br>
-            <p>In the multi-error case, helpers should be output one after another, like so:</p>
+            <p>Если ошибок несколько, то выводим <b><i>.helper</i></b>`ы друг за другом:</p>
 
             <div class="input input--error">
                 <input class="input__widget" type="password" placeholder="Password" value="0xFoo">
             </div>
             <div class="helper helper--error">
-                Password is too short
+                Пароль слишком короткий
             </div>
             <div class="helper helper--error">
-                Password must contain a special character
+                Пароль должен содержать хотя бы один спецсимвол
             </div>
             <div class="helper helper--error">
-                Password must be hard to guess: dates, phone numbers and names are not allowed and either it shouldn’t be based on public data
+                Пароль должно быть сложно подобрать. Не допускается использование дат, номеров телефона. Так же не доспукается использование информации доступной публично
             </div>
             <div class="helper helper--error">
-                New password is similar to previous password
+                Новый пароль совпадает с текущим
             </div>
 
 
@@ -122,7 +121,7 @@
             <br>
             <h2>type="password"</h2>
             <p>
-                The font was changed here for better-looking dots.
+                Меняем шрифт на Тахому, чтобы точки выглядили получше:
             </p>
 
             <div class="input">
@@ -135,7 +134,7 @@
             <br>
             <h2>&lt;textarea&gt;</h2>
             <p>
-                Don’t forget to use the <b><i>rows</i></b> attribute to specify number of lines.
+                Используем атрибут <b><i>rows</i></b> чтобы задать количество строк:
             </p>
 
             <div class="input">
@@ -145,15 +144,16 @@
             <br>
             <h3>.input--expandable</h3>
             <p>
-                Using JavaScript, calculate the height to make the textarea expand as the user types.
-                In this case, the <b><i>rows</i></b> attribute will serve as a starting point, and the <b><i>max-height</i></b>
-                set in the styles will limit the computed height, even if it exceeds any reasonable value.
+                Будем расхлопывать textarea скриптом. Обсчитываем высоту по ходу печати.
+                Атрибут <b><i>rows</i></b>, в этом случае, задаёт начальное количество строк, а <b><i>max-height</i></b>
+                в стилях ограничит высоту если ввели слишком много текста.
             </p>
             <p>
-                The value for this <b><i>max-height</i></b> should be calculated based on the number of lines plus vertical paddings and borders. Currently, it is <b>266px</b>:
-                <br>• <b>10 lines</b> of <b>24px</b> each (line-height)
-                <br>• Plus <b>2×11px</b> — two vertical paddings (top and bottom ones)
-                <br>• Plus <b>4px</b> of border
+                Значение <b><i>max-height</i></b> следует подбираться кратно количеству строк плюс вертикальные паддинги
+                и бордюры. Сейчас выставлено <b>266px</b> — это:
+                <br>• <b>10 строк</b> по <b>24px</b> каждая (line-height)
+                <br>• Плюс <b>2×11px</b> -- это два вертикальных паддинга (верхний и нижний)
+                <br>• Плюс <b>4px</b> пикселя бордюров
             </p>
 
             <div class="input input--expandable">
@@ -199,20 +199,22 @@
 
             <br>
             <br>
-            <h3>Placeholder in the &lt;select&gt;</h3>
+            <h3>Плейсхолдер у селекта</h3>
             <p>
-                Notice that there is a problem with the <b><i>&lt;select&gt;</i></b> tag.
-                It doesn’t work with the <b><i>placeholder</i></b> attribute.
-                It’s expected that at least one option is always selected.
+                С тегом <b><i>&lt;select&gt;</i></b> есть проблема.
+                Оне не умеет работать с атрибутом <b><i>placeholder</i></b>.
+                Ожидается, что хотя бы один элемент в селекте всегда выбран.
             </p>
             <p>
-                However, it doesn’t match the rest of the inputs, especially when there are a few of them in a row along with a select.
-                So let’s fake it.
+                Но визуально это не вяжется с остальными инпутами.
+                Особенно если несколько инпутов и селект идут друг за другом.
+                Подделаем что-то похожее на плейсхолдер.
             </p>
             <p>
-                Assign first option to be a placeholder: <b><i>&lt;option value="placeholder"&gt;</i></b>. Then
-                use JS to check if this option is selected and toggle the <b><i>.input--placeholder-is-chosen</i></b>
-                class to change the color.
+                Плейсхолдером назначим первый из опшнов: <b><i>&lt;option value="placeholder"&gt;</i></b>.
+                Далее скриптом проверяем: если выбран этот элемент, то на весь компонент добавляем модификатор
+                <b><i>.input--placeholder-is-chosen</i></b>
+                и цвет виджета поменяется на серый.
             </p>
 
 
@@ -251,18 +253,19 @@
             </div>
 
             <p>
-                Don’t make option with placeholder to be disabled. Users may want to leave this field untouched, or clear it by re-selecting placeholder.
-                If the form was submitted with <b><i>"placeholder"</i></b> as the value for the select, it should be treated as equivalent to an empty text field.
+                Важно не добавлять этому опшну атрибут <b><i>disabled</i></b>. Пользователь может решить оставить
+                поле нетронутым, или очистить его выбрав плейсхолдер. Если данные из формы были получены со значением
+                <b><i>"placeholder"</i></b> в селекте, то это следует воспринимать аналогично пустому <b><i>&lt;input&gt;</i></b>.
             </p>
             <p>
-                On the other hand, if the field is required, ensure that it does not pass validation with the placeholder selected.
+                С другой стороны, если селект обязателен для заполнения, то важно, чтобы он не прошёл валидацию.
             </p>
 
 
             <br>
             <br>
             <br>
-            <h2>Other types</h2>
+            <h2>Остальные типы</h2>
             <br>
 
             <label class="label" for="uzoyce97">
@@ -382,9 +385,8 @@
         <script src="../vendors/inputmask/jquery.inputmask.min.js"></script>
         <script src="../vendors/inputmask.phone/inputmask.phone.extensions.min.js"></script>
         <script src="../vendors/inputmask.phone/phone-codes/phone-ru.min.js"></script>
-        <script src="../scripts/_mfp.js?1730347354"></script>
-        <script src="../scripts/_input.js?1730347354"></script>
-        <script src="../scripts/_inputmask.js?1730347354"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../scripts/scripts.js?1730357210"></script>
 
 
     </body>

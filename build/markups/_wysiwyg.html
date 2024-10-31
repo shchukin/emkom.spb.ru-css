@@ -4,27 +4,28 @@
         <meta charset="utf-8">
         <title>.wysiwyg</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/styles.css?1730347354">
+        <link rel="stylesheet" href="../styles/styles.css?1730357210">
     </head>
-    <body>
+    <body style="background: white">
 
         <div style="max-width: 720px; margin: 0 auto; padding: 0 var(--container-padding);">
             <br>
             <br>
             <h1>.wysiwyg</h1>
             <p>
-                This component sets styles for tags such <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>, etc.
+                Внутри этого компонента задаём стили для тегов вроде <b><i>&lt;p&gt;</i></b>, <b><i>&lt;ul&gt;</i></b>, <b><i>&lt;img&gt;</i></b>.
             </p>
             <p>
-                On one hand, we should never match on tags globally or apply styles to tags for
-                the sake of modularity. We always use classes. In other words it's a bad practise to apply styles directly to tags.
+                С одной стороны, мы не матчимся на теги, а всегда используем классы. Ради модульности.
+                Т.е. нельзя задавать стили напрямую тегам.
             </p>
             <p>
-                On the other hand, there are cases, such a user generated content or user agreement styling
-                where we don’t control the HTML code.
+                С другой стороны, бывают случаи, где мы не контролируем HTML‑код: user generated контент,
+                стилизация лицензионного соглашения и т.д.
             </p>
             <p>
-                This is where we wrap text in a <b><i>.wysiwyg</i></b> class, and all the tags inside inherit the defined styles.
+                В таких случаях используем компонент <b><i>.wysiwyg</i></b>, и все теги
+                в контексте этого компонента получат заданные стили.
             </p>
 
 
@@ -79,9 +80,8 @@
         <script src="../vendors/inputmask/jquery.inputmask.min.js"></script>
         <script src="../vendors/inputmask.phone/inputmask.phone.extensions.min.js"></script>
         <script src="../vendors/inputmask.phone/phone-codes/phone-ru.min.js"></script>
-        <script src="../scripts/_mfp.js?1730347354"></script>
-        <script src="../scripts/_input.js?1730347354"></script>
-        <script src="../scripts/_inputmask.js?1730347354"></script>
+        <script src="../vendors/swiper/swiper-bundle.min.js"></script>
+        <script src="../scripts/scripts.js?1730357210"></script>
 
 
     </body>
