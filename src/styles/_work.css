@@ -1,3 +1,5 @@
+/* В десктопных версиях .work важно обрезать по clip-path самый старший элемент компонента.
+   Это нужно, чтобы обрезались границы кликабельности гексагрна. */
 .work {
     position: relative;
     display: block;
@@ -64,7 +66,9 @@
 
 
 @media (width < 740px) {
-
+    /* На смартфонах границы кликабельности гексагрна не важны. Наоборот, это даже лучше, чтобы они были побольше.
+       Но нужно высводобить .work__label из под обрезания. По-этому переносим clip-path на .work__preview:
+    */
     .work {
         /*position: relative;*/
         /*display: block;*/
@@ -80,19 +84,8 @@
             clip-path: path("M255 0H85L0 147L85 294H255L340 147L255 0Z");
         }
 
-        @media (width < 350px) {
-            .work__preview {
-                width: 300px;
-                height: 260px;
-                clip-path: path("M255 0H85L0 147L85 294H255L340 147L255 0Z");
-            }
-        }
-
             .work__image {
-                /*vertical-align: top;*/
-                /*width: 100%;*/
-                /*height: 100%;*/
-                /*object-fit: cover;*/
+
             }
 
             .work__preview::after {
@@ -107,13 +100,6 @@
                 /*transition: opacity var(--transition-hover);*/
             }
 
-            @media (width < 350px) {
-                .work__preview::after {
-                    width: 300px;
-                    height: 260px;
-                    clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
-                }
-            }
 
             .work:hover .work__preview::after {
                 /*opacity: 80%;*/
@@ -150,6 +136,26 @@
         }
 }
 
+@media (width < 350px) {
+    .work__preview {
+        width: 300px;
+        height: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z");
+    }
+        .work__preview::after {
+            width: 300px;
+            height: 260px;
+            clip-path: path("M225 0H75L0 130L75 260H225L300 130L225 0Z"); /* Повторяем маску из того, что выше, а то иногда этот градиент ключит и прорывается наружу */
+        }
+            .work__details {
+                top: 210px;
+                padding: 6px 20px;
+                font-size: 15px;
+                line-height: 20px;
+            }
+}
 
 
 
