@@ -233,6 +233,9 @@
                             left: 408px;
                         }
 
+    .carousel--css-skin-full-portfolio-on-desktop .carousel__pagination {
+        display: none;
+    }
 }
 
 
@@ -306,7 +309,7 @@
                         display: none;
                     }
 
-    .carousel--css-skin-full-portfolio-on-desktop .carousel__pagination {
+    .carousel--css-skin-short-portfolio-on-desktop .carousel__pagination {
         display: none;
     }
 
