@@ -100,8 +100,6 @@
 
         .service__body {
             margin-top: 50px;
-            display: flex;
-            flex-direction: column;
         }
             .service__heading {
                 /*margin-top: 0;*/
@@ -119,7 +117,6 @@
             .service__gallery {
                 margin-top: 34px;
                 /*gap: 14px;*/
-                order: 5;
             }
                 .service__gallery-item {
 
@@ -130,7 +127,7 @@
                 }
 
             .service__bottom-content {
-                margin-top: var(--body-line-height);
+                /*margin-top: 48px;*/
             }
 }
 
