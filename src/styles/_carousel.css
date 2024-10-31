@@ -94,7 +94,7 @@
         top: 50%;
         width: 70px;
         height: 70px;
-        margin-top: -35px;
+        margin-top: calc(-35px - 19px); /* 19px высота точек */
         padding: 0;
         border: none;
         display: flex;
@@ -547,7 +547,6 @@
                     .carousel--css-skin-folder .swiper-slide {
 
                     }
-
                         .carousel--css-skin-folder .swiper-slide-active {
 
                         }
@@ -558,6 +557,34 @@
                             .carousel--css-skin-folder .swiper-slide-active .thumbnail {
 
                             }
+}
+
+
+
+
+/* Skin Gallery */
+
+.carousel--css-skin-gallery {
+
+}
+
+@media (width < 740px) {
+
+    .carousel--css-skin-gallery {
+
+    }
+        .carousel--css-skin-gallery .carousel__widget {
+
+        }
+            .carousel--css-skin-gallery .swiper {
+                overflow: visible;
+            }
+                .carousel--css-skin-gallery .swiper-wrapper {
+
+                }
+                    .carousel--css-skin-gallery .swiper-slide {
+
+                    }
 }
 
 
