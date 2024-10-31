@@ -36,41 +36,51 @@
 
 /* Default bullets */
 
-.carousel--css-default-bullets .carousel__pagination {
-    margin-top: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* На случай типа fraction: */
-    font-size: 15px;
-    line-height: 20px;
-    color: currentColor;
-    text-align: center;
+@media (740px <= width) {
+
+    .carousel__pagination {
+        display: none;
+    }
 }
-    .carousel--css-default-bullets .carousel__bullet {
-        flex-shrink: 0;
-        width: 28px;
-        height: 40px;
+
+@media (width < 740px) {
+
+    .carousel--css-default-bullets .carousel__pagination {
+        margin-top: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
-        cursor: pointer;
+        /* На случай типа fraction: */
+        font-size: 15px;
+        line-height: 20px;
+        color: currentColor;
+        text-align: center;
     }
-        .carousel--css-default-bullets .carousel__bullet::after {
-            content: "";
-            display: block;
-            width: 16px;
-            height: 16px;
-            border-radius: 50%;
-            background-color: #666666;
+        .carousel--css-default-bullets .carousel__bullet {
+            flex-shrink: 0;
+            width: 28px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
         }
+            .carousel--css-default-bullets .carousel__bullet::after {
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                background-color: #666666;
+            }
 
-        .carousel--css-default-bullets .carousel__bullet--current::after {
-            background-color: currentColor;
-        }
+            .carousel--css-default-bullets .carousel__bullet--current::after {
+                background-color: currentColor;
+            }
 
-.carousel--css-default-bullets.carousel--not-enough-slides .carousel__pagination {
-    display: none;
+    .carousel--css-default-bullets.carousel--not-enough-slides .carousel__pagination {
+        display: none;
+    }
 }
 
 
